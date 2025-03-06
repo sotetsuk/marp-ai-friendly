@@ -1,8 +1,16 @@
 # marp-theme-academic
 
-![](./demo.001.png)
-![](./demo.002.png)
-![](./demo.003.png)
-![](./demo.004.png)
-![](./demo.005.png)
-![](./demo.006.png)
+A fork of https://github.com/kaisugi/marp-theme-academic
+
+
+## Usage 
+
+Add `.vscode/settings.json ` and open the markdown with VSCode.
+
+```json
+{
+    "markdown.marp.themes": [
+      "https://raw.githubusercontent.com/sotetsuk/marp-theme-academic/refs/heads/main/themes/academic.css",
+    ]
+}
+```
