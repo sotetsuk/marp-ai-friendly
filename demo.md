@@ -189,6 +189,8 @@ _"The biggest lesson that can be read from 70 years of AI research is that gener
 
 </div>
 
+> http://www.incompleteideas.net/IncIdeas/BitterLesson.html
+
 ---
 
 <!-- _header: 定理ボックス -->
