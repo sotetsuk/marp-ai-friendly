@@ -38,37 +38,21 @@ section.lead h1 {
 section.lead h1 strong {
   -webkit-text-stroke: 1px var(--color-highlight);
 }
-section.lead h2 {
+
+h2 {
+  border-left: 20px solid var(--color-highlight);
+  padding-left: 12px;
+  margin-left: -20px;
+  font-size: 1.0em;
   color: var(--color-highlight);
-  text-align: left;
 }
-section.lead h2 strong {
-  -webkit-text-stroke: 1px var(--color-highlight);
+
+h3 {
+  padding-left: 12px;
+  margin-left: -20px;
+  font-size: 1.0em;
 }
-section.lead h3 {
-  color: var(--color-highlight);
-  text-align: left;
-}
-section.lead h3 strong {
-  -webkit-text-stroke: 1px var(--color-highlight);
-}
-section.lead h4 {
-  color: var(--color-highlight);
-  text-align: left;
-}
-section.lead h4 strong {
-  -webkit-text-stroke: 1px var(--color-highlight);
-}
-section.lead h5 {
-  color: var(--color-highlight);
-  text-align: left;
-}
-section.lead h5 strong {
-  -webkit-text-stroke: 1px var(--color-highlight);
-}
-section.lead p {
-  text-align: right;
-}
+
 
 header {
   background-color: var(--color-highlight);
@@ -300,17 +284,3 @@ section.center-box {
   width: 100%;
 }
 
-/* 見出しの縦棒スタイルを更新 */
-h2 {
-  border-left: 20px solid var(--color-highlight);
-  padding-left: 12px;
-  margin-left: -20px;
-  font-size: 1.0em;
-  color: var(--color-highlight);
-}
-
-h3 {
-  padding-left: 12px;
-  margin-left: -20px;
-  font-size: 1.0em;
-}
