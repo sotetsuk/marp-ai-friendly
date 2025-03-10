@@ -85,6 +85,9 @@ header {
 .split-30-65 { grid-template-columns: 30% 65%; }
 .split-40-55 { grid-template-columns: 40% 55%; }
 .split-45-50 { grid-template-columns: 45% 50%; }
+.split-50-45 { grid-template-columns: 50% 45%; }
+.split-55-40 { grid-template-columns: 55% 40%; }
+.split-65-30 { grid-template-columns: 65% 30%; }
 
 .h300 { height: 300px; }
 .h400 { height: 400px; }
