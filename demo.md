@@ -24,6 +24,22 @@ _YYYY/MM/DD_
 1. 数式
 1. 図
 
+
+---
+
+<!-- _header: 数式 -->
+
+数式は4行までしか入らない。左右分割はしない方がよい。
+
+$$
+\begin{array}{c}{{\displaystyle{\mathrm{NLL}}(\mu,\sigma^{2})\\
+=-\sum_{n=1}^{N}\log\left[\left(\frac{1}{2\pi\sigma^{2}}\right)^{\frac{1}{2}}\exp\left(-\frac{1}{2\sigma^{2}}(y_{n}-\mu)^{2}\right)\right]}} \\
+{{\displaystyle{=\frac{1}{2\sigma^{2}}\sum_{n=1}^{N}(y_{n}-\mu)^{2}+\frac{N}{2}\log(2\pi\sigma^{2})}}}
+\end{array}
+$$
+
+インライン数式 $\mathbb{E}[x] = \int_{-\infty}^{\infty} x f(x) dx$ も使える。
+
 ---
 
 <!-- _header: はじめに -->
@@ -221,16 +237,3 @@ if __name__ == "__main__":
 ```
 </div>
 </div>
-
----
-
-<!-- _header: 数式 -->
-
-数式は4行までしか入らない。左右分割はしない方がよい。
-
-$$
-\begin{array}{c}{{\displaystyle{\mathrm{NLL}}(\mu,\sigma^{2})\\
-=-\sum_{n=1}^{N}\log\left[\left(\frac{1}{2\pi\sigma^{2}}\right)^{\frac{1}{2}}\exp\left(-\frac{1}{2\sigma^{2}}(y_{n}-\mu)^{2}\right)\right]}} \\
-{{\displaystyle{=\frac{1}{2\sigma^{2}}\sum_{n=1}^{N}(y_{n}-\mu)^{2}+\frac{N}{2}\log(2\pi\sigma^{2})}}}
-\end{array}
-$$
