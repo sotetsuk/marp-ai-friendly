@@ -285,16 +285,14 @@ h2 {
   border-left: 20px solid rgb(12, 91, 175);
   padding-left: 12px;
   margin-left: -20px;
-  font-size: 1.3em;
+  font-size: 1.0em;
   color: rgb(12, 91, 175);
 }
 
 h3 {
-  border-left: 20px solid rgb(12, 91, 175);
   padding-left: 12px;
   margin-left: -20px;
-  font-size: 1.1em;
-  color: rgb(12, 91, 175);
+  font-size: 1.0em;
 }
 
 /* 高さ指定可能な左右レイアウト */

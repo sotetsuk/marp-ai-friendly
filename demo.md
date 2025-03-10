@@ -156,7 +156,7 @@ h3の見出しにも同様の縦棒が表示されます。
   <div class="flex-left"><img src="./images/kenkyu_woman_seikou.png" height="250"></div>
   <div class="flex-right">
 
-### 高さを変更可能
+## 高さを変更可能
 以下のクラスで高さを変更可能：`flex-container-h300`, `flex-container-h400`, `flex-container-h500`
 
   </div>
@@ -165,7 +165,7 @@ h3の見出しにも同様の縦棒が表示されます。
   <div class="flex-left"><img src="./images/kenkyu_woman_seikou.png" height="250"></div>
   <div class="flex-right">
 
-### 一貫性のあるレイアウト
+## 一貫性のあるレイアウト
 このレイアウトは、図表と説明文を組み合わせた場合に特に効果的です。高さが固定されているため、**スライド間の一貫性が保たれます。**
 
   </div>
@@ -183,7 +183,7 @@ h3の見出しにも同様の縦棒が表示されます。
 </div>
 <div>
 
-### コンテンツ
+## コンテンツ
 
 - 画像は左側40%の領域に配置
 - テキストは右側55%の領域に配置
@@ -207,7 +207,7 @@ h3の見出しにも同様の縦棒が表示されます。
 </div>
 <div>
 
-実装例
+### 実装例
 
 ```py
 import torch
