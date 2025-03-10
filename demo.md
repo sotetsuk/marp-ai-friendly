@@ -40,26 +40,11 @@ $$
 
 インライン数式 $\mathbb{E}[x] = \int_{-\infty}^{\infty} x f(x) dx$ も使える。
 
----
-
-<!-- _header: はじめに -->
-
-- Marp とは **Markdown** で _スライド_ を作成するためのソフトウェアである。
-  - 基本的な Markdown のシンタックスがサポートされている。
-- Markdown 上で `---` という区切り線を入れるだけで、次のページに移動することができる。$^1$
-
-> 1: Marp は CommonMark という Markdown の仕様に沿って開発されているため、CommonMark に含まれていない「脚注」の文法（`[^1]` を使うもの）が提供されていない。そこで、https://github.com/marp-team/marp/discussions/150#discussioncomment-1302384 を参照して擬似的に脚注を実現した。
+> 1: 脚注は小さい文字で下に表示される
 
 ---
 
 <!-- _header: コードブロック -->
-
-```python
-import torch
-print(torch.cuda.is_available())
-```
-
-こんな感じでコードブロックを書くことができる。
 
 ```python
 from transformers import AutoModelForMaskedLM, AutoTokenizer
@@ -75,28 +60,16 @@ tokenizer.convert_ids_to_tokens(outputs.logits[0][1:-1].argmax(axis=-1))
 
 ---
 
-<!-- _header: 数式 -->
+<!-- _header: 図とキャプション -->
 
-数式は4行までしか入らない。左右分割はしない方がよい。
+<div class="figure-with-caption">
 
-$$
-\begin{array}{c}{{\displaystyle{\mathrm{NLL}}(\mu,\sigma^{2})\\
-=-\sum_{n=1}^{N}\log\left[\left(\frac{1}{2\pi\sigma^{2}}\right)^{\frac{1}{2}}\exp\left(-\frac{1}{2\sigma^{2}}(y_{n}-\mu)^{2}\right)\right]}} \\
-{{\displaystyle{=\frac{1}{2\sigma^{2}}\sum_{n=1}^{N}(y_{n}-\mu)^{2}+\frac{N}{2}\log(2\pi\sigma^{2})}}}
-\end{array}
-$$
+<img src="./images/kenkyu_woman_seikou.png" width="400">
 
-こんな感じで数式を書くことができる。もちろんインラインの $\LaTeX$ も使える。  
-ついでに絵文字も使える:smile:
+<p class="figure-caption">図は基本的にhtmlで書いたほうがよい。imgタグを使う。</p>
 
----
+</div>
 
-<!-- _header: 図 -->
-
-1. まず[このいらすとやのリンク](https://www.irasutoya.com/2018/10/blog-post_723.html)から画像（`kenkyu_woman_seikou.png`）を右クリックでダウンロードしてください。
-2. この Markdown のあるディレクトリの中に `images` という名前のディレクトリを作り、先ほどダウンロードした画像を配置してください。これで準備が整いました。
-
-![w:300 center](./images/kenkyu_woman_seikou.png)
 
 ---
 
@@ -109,18 +82,6 @@ $$
 _"The biggest lesson that can be read from 70 years of AI research is that general methods that **leverage computation** are ultimately the most effective, and by a large margin."_
 
 — R. Sutton [2019], "The Bitter Lesson."
-
-</div>
-
----
-
-<!-- _header: 図とキャプション -->
-
-<div class="figure-with-caption">
-
-<img src="./images/kenkyu_woman_seikou.png" width="400">
-
-<p class="figure-caption">研究に成功した女性研究者のイラスト</p>
 
 </div>
 
