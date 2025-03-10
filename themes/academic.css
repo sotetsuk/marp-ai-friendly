@@ -88,17 +88,16 @@ strong {
   color: var(--color-accent);
 }
 
-.box-content {
-  border: 3px solid var(--color-gray);
-  background-color: var(--color-gray);
-  padding: 1rem 2rem;
-  border-radius: 30px;
-  width: 80%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.r {
+  color: var(--color-accent);
+  font-weight: bold;
 }
+
+.b {
+  color: var(--color-highlight);
+  font-weight: bold;
+}
+
 
 /* Dynamic grid layout with optional height settings */
 .grid {
@@ -228,17 +227,6 @@ strong {
   object-fit: contain;
 }
 
-/* Colored bold text styles */
-.r {
-  color: var(--color-accent);
-  font-weight: bold;
-}
-
-.b {
-  color: var(--color-highlight);
-  font-weight: bold;
-}
-
 /* Figure styles */
 .fig-group {
   display: flex;
@@ -265,5 +253,19 @@ strong {
   font-size: 0.9em;
   z-index: 1;
   position: relative;
+}
+
+
+/* Center box style */
+.box-content {
+  border: 3px solid var(--color-gray);
+  background-color: var(--color-gray);
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
