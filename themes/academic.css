@@ -277,6 +277,10 @@ strong {
   margin: 1rem 0;
 }
 
+.theorem-box.center {
+  text-align: center;
+}
+
 .theorem-box > :first-child {
   margin-top: 0;
 }
