@@ -112,7 +112,7 @@ _"The biggest lesson that can be read from 70 years of AI research is that gener
 <div class="grid grid-cols-2 gap-4">
 <div>
 
-![](./images/kenkyu_woman_seikou.png)
+<img src="./images/kenkyu_woman_seikou.png" width="400">
 
 </div>
 <div>
