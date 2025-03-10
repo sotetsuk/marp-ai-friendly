@@ -96,3 +96,18 @@ img[alt~="center"] {
 code {
   font-family: 'Source Code Pro', monospace;
 }
+
+/* Center box style */
+section.center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.box-content {
+  border: 3px solid var(--color-highlight);
+  padding: 2rem 4rem;
+  border-radius: 8px;
+  text-align: center;
+}

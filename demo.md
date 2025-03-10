@@ -28,6 +28,16 @@ YYYY/MM/DD
 
 ---
 
+<!-- _header: 引用 -->
+
+
+_“The biggest lesson that can be read from 70 years of AI
+research is that general methods that leverage computation
+are ultimately the most effective, and by a large margin.”
+— R. Sutton [2019], “The Bitter Lesson.”_
+
+---
+
 <!-- _header: はじめに -->
 
 - Marp とは **Markdown** で**スライド**を作成するためのソフトウェアである。
@@ -82,3 +92,18 @@ $$
 2. この Markdown のあるディレクトリの中に `images` という名前のディレクトリを作り、先ほどダウンロードした画像を配置してください。これで準備が整いました。
 
 ![w:300 center](./images/kenkyu_woman_seikou.png)
+
+---
+
+<!-- _header: 中央ボックス -->
+
+<!-- _class: center-box -->
+
+<div class="box-content">
+
+# 重要なメッセージ
+
+研究室での発表を<br>
+もっと魅力的に！
+
+</div>
