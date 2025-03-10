@@ -269,8 +269,8 @@ strong {
   transform: translate(-50%, -50%);
 }
 
-/* Theorem box style */
-.theorem-box {
+/* blue box style */
+.blue-box {
   border: 2px solid var(--color-highlight);
   border-radius: 8px;
   padding: 0.8rem 1.2rem;
@@ -278,15 +278,15 @@ strong {
   background-color: rgba(12, 91, 175, 0.1);
 }
 
-.theorem-box.center {
+.blue-box.center {
   text-align: center;
 }
 
-.theorem-box > :first-child {
+.blue-box > :first-child {
   margin-top: 0;
 }
 
-.theorem-box > :last-child {
+.blue-box > :last-child {
   margin-bottom: 0;
 }
 

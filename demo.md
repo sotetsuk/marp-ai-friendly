@@ -195,9 +195,9 @@ _"The biggest lesson that can be read from 70 years of AI research is that gener
 
 <!-- _header: 定理ボックス -->
 
-<div class="theorem-box">
+<div class="blue-box">
 
-<span class="b">定理 1</span> (Fundamental Theorem)
+<span class="b">定理 1</span> (Fundamental blue)
 任意の正の実数 $x$ について、次が成り立つ：
 
 $$
@@ -219,7 +219,7 @@ $$
 
 <div class="grid split-45-50">
 <div>
-<div class="theorem-box">
+<div class="blue-box">
 
 <span class="b">補題</span> $f(x)$ が区間 $[a,b]$ で連続ならば、
 $$
@@ -234,7 +234,7 @@ $$
 - 定理ボックスは左右分割レイアウトと組み合わせ可能
 - 証明のステップや補足説明を右側に配置できる
 
-<div class="theorem-box center">
+<div class="blue-box center">
 
 <span class="b">結論: 数式との相性も良好</span> 
 
