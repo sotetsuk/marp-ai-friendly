@@ -218,3 +218,11 @@ $$
 
 </div>
 </div>
+
+---
+
+<!-- _header: 参考文献 -->
+
+* [Marp](https://marp.app/)
+* [kaisugi/marp-theme-academic](https://github.com/kaisugi/marp-theme-academic)
+* [パワーポイントの品質と生産性を向上させるデザイン・テンプレート](https://ppt.design4u.jp/template/)
