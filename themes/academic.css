@@ -111,11 +111,12 @@ section.center-box {
 }
 
 .box-content {
-  border: 3px solid var(--color-highlight);
-  padding: 2rem 4rem;
-  border-radius: 8px;
+  border: 3px solid rgb(239, 239, 239);
+  padding: 1rem 2rem;
+  border-radius: 30px;
   text-align: left;
   min-width: 60%;
+  background-color: rgb(239, 239, 239);
 }
 
 .box-content h1,
