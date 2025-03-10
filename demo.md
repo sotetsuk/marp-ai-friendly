@@ -63,13 +63,16 @@ tokenizer.convert_ids_to_tokens(outputs.logits[0][1:-1].argmax(axis=-1))
 
 <!-- _header: 数式 -->
 
-$$ I_{xx}=\int\int_Ry^2f(x,y)\cdot{}dydx $$
+数式は4行までしか入らない。左右分割はしない方がよい。
 
+\\[12pt]
 $$
-f(x) = \int_{-\infty}^\infty
-    \hat f(\xi)\,e^{2 \pi i \xi x}
-    \,d\xi
+\begin{array}{c}{{\displaystyle{\mathrm{NLL}}(\mu,\sigma^{2})\\
+=-\sum_{n=1}^{N}\log\left[\left(\frac{1}{2\pi\sigma^{2}}\right)^{\frac{1}{2}}\exp\left(-\frac{1}{2\sigma^{2}}(y_{n}-\mu)^{2}\right)\right]}} \\
+{{\displaystyle{=\frac{1}{2\sigma^{2}}\sum_{n=1}^{N}(y_{n}-\mu)^{2}+\frac{N}{2}\log(2\pi\sigma^{2})}}}
+\end{array}
 $$
+\\[12pt]
 
 こんな感じで数式を書くことができる。もちろんインラインの $\LaTeX$ も使える。  
 ついでに絵文字も使える:smile:
@@ -227,12 +230,11 @@ if __name__ == "__main__":
 
 <!-- _header: 数式 -->
 
-![width:200 center](./images/kenkyu_woman_seikou.png)
-
-数式は幅を取るので、左右分割等はしないほうが良い。
+数式は4行までしか入らない。左右分割はしない方がよい。
 
 $$
 \begin{array}{c}{{\displaystyle{\mathrm{NLL}}(\mu,\sigma^{2})\\
 =-\sum_{n=1}^{N}\log\left[\left(\frac{1}{2\pi\sigma^{2}}\right)^{\frac{1}{2}}\exp\left(-\frac{1}{2\sigma^{2}}(y_{n}-\mu)^{2}\right)\right]}} \\
-{{\displaystyle{=\frac{1}{2\sigma^{2}}\sum_{n=1}^{N}(y_{n}-\mu)^{2}+\frac{N}{2}\log(2\pi\sigma^{2})}}}\end{array}
-$$  
+{{\displaystyle{=\frac{1}{2\sigma^{2}}\sum_{n=1}^{N}(y_{n}-\mu)^{2}+\frac{N}{2}\log(2\pi\sigma^{2})}}}
+\end{array}
+$$
