@@ -11,7 +11,7 @@ math: katex
 
 <br>
 
-_Your NAME (YYYY/MM/DD)_
+Your NAME (YYYY/MM/DD)
 
 ---
 
