@@ -269,3 +269,19 @@ strong {
   transform: translate(-50%, -50%);
 }
 
+/* Theorem box style */
+.theorem-box {
+  border: 2px solid var(--color-highlight);
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  margin: 1rem 0;
+}
+
+.theorem-box > :first-child {
+  margin-top: 0;
+}
+
+.theorem-box > :last-child {
+  margin-bottom: 0;
+}
+

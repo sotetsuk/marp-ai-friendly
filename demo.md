@@ -190,3 +190,52 @@ _"The biggest lesson that can be read from 70 years of AI research is that gener
 — R. Sutton [2019], "The Bitter Lesson."
 
 </div>
+
+---
+
+<!-- _header: 定理ボックス -->
+
+<div class="theorem-box">
+
+<span class="b">定理 1</span> (Fundamental Theorem)
+任意の正の実数 $x$ について、次が成り立つ：
+
+$$
+e^x \geq x + 1
+$$
+
+</div>
+
+証明：
+
+$$
+e^x \geq x + 1
+$$
+  
+
+---
+
+<!-- _header: 定理ボックス　（左右分割） -->
+
+<div class="grid split-45-50">
+<div>
+<div class="theorem-box">
+
+<span class="b">補題</span> $f(x)$ が区間 $[a,b]$ で連続ならば、
+$$
+\int_a^b f(x)dx
+$$
+が存在する。
+
+</div>
+</div>
+<div>
+
+- 定理ボックスは左右分割レイアウトと組み合わせ可能
+- 証明のステップや補足説明を右側に配置できる
+- 数式との相性も良好
+
+</div>
+</div>
+
+---
