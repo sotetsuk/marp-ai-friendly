@@ -4,60 +4,161 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
+/* Base Theme Settings
+   ========================================================================== */
 :root {
-  --color-background: #fff;
-  --color-foreground: #333;
-  --color-highlight: rgb(12, 91, 175);
-  --color-accent: rgb(252, 55, 63);
-  --color-gray: rgb(239, 239, 239);
-  --color-dark: rgb(38, 38, 38);
+  /* Color palette */
+  --primary: rgb(12, 91, 175);
+  --primary-light: rgba(12, 91, 175, 0.1);
+  --accent: rgb(252, 55, 63);
+  --accent-light: rgba(252, 55, 63, 0.1);
+  --background: #ffffff;
+  --text: #333333;
+  --gray: #efefef;
+  --dark: #262626;
+  
+  /* Typography */
+  --font-base: 'Noto Sans JP', sans-serif;
+  --font-code: 'Source Code Pro', monospace;
+  
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 0.8rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
 }
 
+/* Base Layout
+   ========================================================================== */
 section {
+  font-family: var(--font-base);
   background-image: none;
-  font-family: 'Noto Sans JP', sans-serif;
-  padding-top: 90px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 90px 40px 40px;
+  background-color: var(--background);
+  color: var(--text);
 }
 
-/* https://github.com/marp-team/marpit/issues/271 */
 section::after {
   font-weight: 700;
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 
-ul ul {
-  font-size: 0.9em;
-}
-
-section.lead h1 {
-  color: var(--color-highlight);
-  text-align: center;
-}
-
-section.lead h1 strong {
-  -webkit-text-stroke: 1px var(--color-highlight);
-}
+/* Typography
+   ========================================================================== */
 h2 {
-  border-left: 20px solid var(--color-highlight);
-  color: var(--color-highlight);
+  border-left: 20px solid var(--primary);
+  color: var(--primary);
   font-size: 1.0em;
   margin-left: -20px;
-  padding-left: 12px;
+  padding-left: var(--space-sm);
 }
 
 h3 {
   font-size: 1.0em;
   margin-left: -20px;
-  padding-left: 12px;
+  padding-left: var(--space-sm);
 }
 
+code {
+  font-family: var(--font-code);
+}
+
+/* Components - Header
+   ========================================================================== */
 header {
-  background-color: var(--color-highlight);
-  color: var(--color-background);
+  background-color: var(--primary);
+  color: var(--background);
   font-size: 1em;
   font-weight: 700;
+}
+
+/* Components - Grid Layout
+   ========================================================================== */
+.grid {
+  display: grid;
+  width: 100%;
+  gap: 5%;
+}
+
+.split-30-65 { grid-template-columns: 30% 65%; }
+.split-40-55 { grid-template-columns: 40% 55%; }
+.split-45-50 { grid-template-columns: 45% 50%; }
+
+.h300 { height: 300px; }
+.h400 { height: 400px; }
+.h500 { height: 500px; }
+
+/* Components - Figures
+   ========================================================================== */
+.fig-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  margin: var(--space-xl) 0;
+}
+
+.fig-row {
+  display: flex;
+  justify-content: space-around;
+  gap: var(--space-md);
+  width: 100%;
+}
+
+.fig-caption {
+  background-color: var(--dark);
+  color: var(--background);
+  padding: var(--space-xs) var(--space-xl);
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* Components - Boxes
+   ========================================================================== */
+.box {
+  border: 2px solid;
+  border-radius: 8px;
+  padding: var(--space-sm) var(--space-md);
+  margin: var(--space-md) 0;
+}
+
+.box.blue {
+  border-color: var(--primary);
+  background-color: var(--primary-light);
+}
+
+.box.red {
+  border-color: var(--accent);
+  background-color: var(--accent-light);
+}
+
+.box.dark {
+  border-color: var(--dark);
+  background-color: var(--gray);
+}
+
+/* Utilities
+   ========================================================================== */
+.r {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.b {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* Lead Slide
+   ========================================================================== */
+section.lead h1 {
+  color: var(--primary);
+  text-align: center;
+}
+
+section.lead h1 strong {
+  -webkit-text-stroke: 1px var(--primary);
 }
 
 blockquote {
@@ -79,139 +180,7 @@ img[alt~="center"] {
   margin: 0 auto;
 }
 
-code {
-  font-family: 'Source Code Pro', monospace;
-}
-
-/* Add default bold text color */
-strong {
-  color: var(--color-accent);
-}
-
-.r {
-  color: var(--color-accent);
-  font-weight: bold;
-}
-
-.b {
-  color: var(--color-highlight);
-  font-weight: bold;
-}
-
-
 /* Dynamic grid layout with optional height settings */
-.grid {
-  display: grid;
-  width: 100%;
-  height: 100%;
-}
-
-/* Grid splits from 20:75 to 80:15 in steps of 5 with height variants */
-.split-20-75 {
-  grid-template-columns: 20% 75% !important;
-  gap: 5%;
-}
-.split-20-75.h300 { height: 300px; }
-.split-20-75.h400 { height: 400px; }
-.split-20-75.h500 { height: 500px; }
-
-.split-25-70 {
-  grid-template-columns: 25% 70% !important;
-  gap: 5%;
-}
-.split-25-70.h300 { height: 300px; }
-.split-25-70.h400 { height: 400px; }
-.split-25-70.h500 { height: 500px; }
-
-.split-30-65 {
-  grid-template-columns: 30% 65% !important;
-  gap: 5%;
-}
-.split-30-65.h300 { height: 300px; }
-.split-30-65.h400 { height: 400px; }
-.split-30-65.h500 { height: 500px; }
-
-.split-35-60 {
-  grid-template-columns: 35% 60% !important;
-  gap: 5%;
-}
-.split-35-60.h300 { height: 300px; }
-.split-35-60.h400 { height: 400px; }
-.split-35-60.h500 { height: 500px; }
-
-.split-40-55 {
-  grid-template-columns: 40% 55% !important;
-  gap: 5%;
-}
-.split-40-55.h300 { height: 300px; }
-.split-40-55.h400 { height: 400px; }
-.split-40-55.h500 { height: 500px; }
-
-.split-45-50 {
-  grid-template-columns: 45% 50% !important;
-  gap: 5%;
-}
-.split-45-50.h300 { height: 300px; }
-.split-45-50.h400 { height: 400px; }
-.split-45-50.h500 { height: 500px; }
-
-.split-50-45 {
-  grid-template-columns: 50% 45% !important;
-  gap: 5%;
-}
-.split-50-45.h300 { height: 300px; }
-.split-50-45.h400 { height: 400px; }
-.split-50-45.h500 { height: 500px; }
-
-.split-55-40 {
-  grid-template-columns: 55% 40% !important;
-  gap: 5%;
-}
-.split-55-40.h300 { height: 300px; }
-.split-55-40.h400 { height: 400px; }
-.split-55-40.h500 { height: 500px; }
-
-.split-60-35 {
-  grid-template-columns: 60% 35% !important;
-  gap: 5%;
-}
-.split-60-35.h300 { height: 300px; }
-.split-60-35.h400 { height: 400px; }
-.split-60-35.h500 { height: 500px; }
-
-.split-65-30 {
-  grid-template-columns: 65% 30% !important;
-  gap: 5%;
-}
-.split-65-30.h300 { height: 300px; }
-.split-65-30.h400 { height: 400px; }
-.split-65-30.h500 { height: 500px; }
-
-.split-70-25 {
-  grid-template-columns: 70% 25% !important;
-  gap: 5%;
-}
-.split-70-25.h300 { height: 300px; }
-.split-70-25.h400 { height: 400px; }
-.split-70-25.h500 { height: 500px; }
-
-.split-75-20 {
-  grid-template-columns: 75% 20% !important;
-  gap: 5%;
-}
-.split-75-20.h300 { height: 300px; }
-.split-75-20.h400 { height: 400px; }
-.split-75-20.h500 { height: 500px; }
-
-.split-80-15 {
-  grid-template-columns: 80% 15% !important;
-  gap: 5%;
-}
-.split-80-15.h300 { height: 300px; }
-.split-80-15.h400 { height: 400px; }
-.split-80-15.h500 { height: 500px; }
-
-/* Grid container child elements */
 .grid > div {
   display: flex;
   flex-direction: column;
@@ -225,59 +194,6 @@ strong {
 .grid > div img {
   max-height: 80vh;
   object-fit: contain;
-}
-
-/* Figure styles */
-.fig-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  margin: 2rem 0;
-  height: 100%;
-  justify-content: center;
-}
-
-.fig-row {
-  display: flex;
-  justify-content: space-around;
-  gap: 1rem;
-  width: 100%;
-}
-
-.fig-caption {
-  background-color: var(--color-dark);
-  color: var(--color-background);
-  padding: 0.5rem 2rem;
-  border-radius: 4px;
-  font-size: 0.9em;
-  z-index: 1;
-  position: relative;
-}
-
-
-/* Base box style */
-.box {
-  border: 2px solid;
-  border-radius: 8px;
-  padding: 0.8rem 1.2rem;
-  margin: 1rem 0;
-}
-
-/* Box color variants */
-.box.blue {
-  border-color: var(--color-highlight);
-  background-color: rgba(12, 91, 175, 0.1);
-}
-
-.box.dark {
-  border-color: var(--color-dark);
-  background-color: rgba(38, 38, 38, 0.1);
-}
-
-.box.red {
-  border-color: var(--color-accent);
-  background-color: rgba(252, 55, 63, 0.1);
 }
 
 /* Box modifiers */
