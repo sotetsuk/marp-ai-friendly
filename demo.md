@@ -69,41 +69,37 @@ tokenizer.convert_ids_to_tokens(outputs.logits[0][1:-1].argmax(axis=-1))
 
 ---
 
-<!-- _header: 図とキャプション `<one-figure-style>` -->
-
-<div class="figures-group">
-
-<div class="figures-row-nocaption">
-<img src="./images/kenkyu_woman_seikou.png" width="400">
-</div>
-
-<p class="figure-caption">図は基本的にhtmlで書いたほうがよい。imgタグを使う。</p>
-
+<!-- _header: 図とキャプション -->
+<div class="fig-group">
+  <div class="fig-row">
+    <img src="./images/kenkyu_woman_seikou.png" width="400">
+  </div>
+  <p class="fig-caption">図は基本的にhtmlで書いたほうがよい。imgタグを使う。</p>
 </div>
 
 ---
 
 <!-- _header: 2つの図とキャプション `<two-figures-style>` -->
 
-<div class="figures-group">
-  <div class="figures-row-nocaption">
+<div class="fig-group">
+  <div class="fig-row">
     <img src="./images/kenkyu_woman_seikou.png" width="400">
     <img src="./images/kenkyu_woman_seikou.png" width="400">
   </div>
-  <p class="figure-caption">研究に成功した女性研究者たち</p>
+  <p class="fig-caption">研究に成功した女性研究者たち</p>
 </div>
 
 ---
 
 <!-- _header: 3つの図を横に並べる `<three-figures-style>` -->
 
-<div class="figures-group">
-  <div class="figures-row-nocaption">
+<div class="fig-group">
+  <div class="fig-row">
     <img src="./images/kenkyu_woman_seikou.png" width="300">
     <img src="./images/kenkyu_woman_seikou.png" width="300">
     <img src="./images/kenkyu_woman_seikou.png" width="300">
   </div>
-  <p class="figure-caption">研究に成功した女性研究者たち</p>
+  <p class="fig-caption">研究に成功した女性研究者たち</p>
 </div>
 
 ---

@@ -244,20 +244,8 @@ section.center-box {
   font-weight: bold;
 }
 
-
-/* Figure with caption style */
-.figure-caption {
-  background-color: var(--color-dark);
-  color: var(--color-background);
-  padding: 0.5rem 2rem;
-  border-radius: 4px;
-  font-size: 0.9em;
-  z-index: 1;
-  position: relative;
-}
-
-/* Multiple figures with single caption */
-.figures-group {
+/* Figure styles */
+.fig-group {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -267,10 +255,20 @@ section.center-box {
   justify-content: center;
 }
 
-.figures-row-nocaption {
+.fig-row {
   display: flex;
   justify-content: space-around;
   gap: 1rem;
   width: 100%;
+}
+
+.fig-caption {
+  background-color: var(--color-dark);
+  color: var(--color-background);
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+  z-index: 1;
+  position: relative;
 }
 
