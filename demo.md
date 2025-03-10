@@ -156,7 +156,7 @@ if __name__ == "__main__":
 
 ---
 
-<!-- _header: 中央ボックス -->
+<!-- _header: ボックス (1) -->
 
 <div class="box dark centered-full">
 
@@ -168,7 +168,7 @@ _"The biggest lesson that can be read from 70 years of AI research is that gener
 
 ---
 
-<!-- _header: 定理ボックス -->
+<!-- _header: ボックス (2) -->
 
 <div class="box blue">
 
@@ -190,7 +190,7 @@ $$
 
 ---
 
-<!-- _header: 定理ボックス　（左右分割） -->
+<!-- _header: ボックス (3) -->
 
 <div class="grid split-45-50">
 <div>
