@@ -70,21 +70,6 @@ tokenizer.convert_ids_to_tokens(outputs.logits[0][1:-1].argmax(axis=-1))
 
 </div>
 
-
----
-
-<!-- _header: 中央ボックス -->
-
-<!-- _class: center-box -->
-
-<div class="box-content">
-
-_"The biggest lesson that can be read from 70 years of AI research is that general methods that **leverage computation** are ultimately the most effective, and by a large margin."_
-
-— R. Sutton [2019], "The Bitter Lesson."
-
-</div>
-
 ---
 
 <!-- _header: 2つの図を横に並べる -->
@@ -112,18 +97,29 @@ _"The biggest lesson that can be read from 70 years of AI research is that gener
 
 ---
 
+<!-- _header: 中央ボックス -->
+
+<!-- _class: center-box -->
+
+<div class="box-content">
+
+_"The biggest lesson that can be read from 70 years of AI research is that general methods that **leverage computation** are ultimately the most effective, and by a large margin."_
+
+— R. Sutton [2019], "The Bitter Lesson."
+
+</div>
+
+---
+
 <!-- _header: 見出しスタイルの例 -->
 
 ## 青色の縦棒付き見出し（h2）
-このように見出しの左端に青色の縦棒が表示されます。
+このように`h2` を使うと見出しの左端に青色の縦棒が表示されます。
 
 ### より小さな見出し（h3）
-h3の見出しにも同様の縦棒が表示されます。
 
-- 箇条書きなどの通常の要素と組み合わせても
-
-### より小さな見出し（h3）
-h3の見出しにも同様の縦棒が表示されます。
+- 箇条書きなどの通常の要素と組み合わせてもよい
+- `h2` か `h3` を使う
 
 ---
 
