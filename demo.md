@@ -7,15 +7,13 @@ math: katex
 
 <!-- _class: lead -->
 
-# Marpで研究室の発表スライドを作る
+# MarpによるAI-friendlyなスライド
 
-#### 〜Beamerを卒業しよう〜
 
 <br>
 
-著者 太郎
-ほげほげ研究室 M2
-YYYY/MM/DD
+_Your NAME_
+_YYYY/MM/DD_
 
 ---
 
@@ -65,14 +63,12 @@ tokenizer.convert_ids_to_tokens(outputs.logits[0][1:-1].argmax(axis=-1))
 
 数式は4行までしか入らない。左右分割はしない方がよい。
 
-\\[12pt]
 $$
 \begin{array}{c}{{\displaystyle{\mathrm{NLL}}(\mu,\sigma^{2})\\
 =-\sum_{n=1}^{N}\log\left[\left(\frac{1}{2\pi\sigma^{2}}\right)^{\frac{1}{2}}\exp\left(-\frac{1}{2\sigma^{2}}(y_{n}-\mu)^{2}\right)\right]}} \\
 {{\displaystyle{=\frac{1}{2\sigma^{2}}\sum_{n=1}^{N}(y_{n}-\mu)^{2}+\frac{N}{2}\log(2\pi\sigma^{2})}}}
 \end{array}
 $$
-\\[12pt]
 
 こんな感じで数式を書くことができる。もちろんインラインの $\LaTeX$ も使える。  
 ついでに絵文字も使える:smile:
