@@ -140,3 +140,28 @@ _"The biggest lesson that can be read from 70 years of AI research is that gener
 <p class="figure-caption">研究に成功した女性研究者のイラスト</p>
 
 </div>
+
+---
+
+<!-- _header: 2つの図を横に並べる -->
+
+<div class="figures-group">
+  <div class="figures-row-nocaption">
+    <img src="./images/kenkyu_woman_seikou.png" width="400">
+    <img src="./images/kenkyu_woman_seikou.png" width="400">
+  </div>
+  <p class="figure-caption">研究に成功した女性研究者たち</p>
+</div>
+
+---
+
+<!-- _header: 3つの図を横に並べる -->
+
+<div class="figures-group">
+  <div class="figures-row-nocaption">
+    <img src="./images/kenkyu_woman_seikou.png" width="300">
+    <img src="./images/kenkyu_woman_seikou.png" width="300">
+    <img src="./images/kenkyu_woman_seikou.png" width="300">
+  </div>
+  <p class="figure-caption">研究に成功した女性研究者たち</p>
+</div>

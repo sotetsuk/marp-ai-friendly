@@ -183,3 +183,35 @@ section.center-box {
   z-index: 1;
   position: relative;
 }
+
+/* Multiple figures layout */
+.figures-row {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.figures-row .figure-with-caption {
+  margin: 0;
+  flex: 1;
+}
+
+/* Multiple figures with single caption */
+.figures-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  height: 100%;
+  justify-content: center;
+}
+
+.figures-row-nocaption {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 100%;
+}
