@@ -28,19 +28,9 @@ YYYY/MM/DD
 
 ---
 
-<!-- _header: 引用 -->
-
-
-_“The biggest lesson that can be read from 70 years of AI
-research is that general methods that leverage computation
-are ultimately the most effective, and by a large margin.”
-— R. Sutton [2019], “The Bitter Lesson.”_
-
----
-
 <!-- _header: はじめに -->
 
-- Marp とは **Markdown** で**スライド**を作成するためのソフトウェアである。
+- Marp とは **Markdown** で _スライド_ を作成するためのソフトウェアである。
   - 基本的な Markdown のシンタックスがサポートされている。
 - Markdown 上で `---` という区切り線を入れるだけで、次のページに移動することができる。$^1$
 
@@ -233,3 +223,16 @@ if __name__ == "__main__":
 </div>
 </div>
 
+---
+
+<!-- _header: 数式 -->
+
+![width:200 center](./images/kenkyu_woman_seikou.png)
+
+数式は幅を取るので、左右分割等はしないほうが良い。
+
+$$
+\begin{array}{c}{{\displaystyle{\mathrm{NLL}}(\mu,\sigma^{2})\\
+=-\sum_{n=1}^{N}\log\left[\left(\frac{1}{2\pi\sigma^{2}}\right)^{\frac{1}{2}}\exp\left(-\frac{1}{2\sigma^{2}}(y_{n}-\mu)^{2}\right)\right]}} \\
+{{\displaystyle{=\frac{1}{2\sigma^{2}}\sum_{n=1}^{N}(y_{n}-\mu)^{2}+\frac{N}{2}\log(2\pi\sigma^{2})}}}\end{array}
+$$  
