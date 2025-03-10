@@ -165,3 +165,17 @@ _"The biggest lesson that can be read from 70 years of AI research is that gener
   </div>
   <p class="figure-caption">研究に成功した女性研究者たち</p>
 </div>
+
+---
+
+<!-- _header: 見出しスタイルの例 -->
+
+## 青色の縦棒付き見出し（h2）
+このように見出しの左端に青色の縦棒が表示されます。
+
+### より小さな見出し（h3）
+h3の見出しにも同様の縦棒が表示されます。
+
+- 箇条書きなどの通常の要素と組み合わせても
+- きれいに表示されます
+  - 入れ子の箇条書きも問題ありません

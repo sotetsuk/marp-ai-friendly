@@ -215,3 +215,16 @@ section.center-box {
   gap: 1rem;
   width: 100%;
 }
+
+/* 見出しの縦棒スタイルを更新 */
+h2 {
+  border-left: 20px solid rgb(12, 91, 175);
+  padding-left: 12px;
+  margin-left: -20px;  /* -32pxから-20pxに変更して右寄せ */
+}
+
+h3 {
+  border-left: 20px solid rgb(12, 91, 175);
+  padding-left: 12px;
+  margin-left: -20px;  /* -32pxから-20pxに変更して右寄せ */
+}
