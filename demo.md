@@ -62,9 +62,11 @@ tokenizer.convert_ids_to_tokens(outputs.logits[0][1:-1].argmax(axis=-1))
 
 <!-- _header: 図とキャプション -->
 
-<div class="figure-with-caption">
+<div class="figures-group">
 
+<div class="figures-row-nocaption">
 <img src="./images/kenkyu_woman_seikou.png" width="400">
+</div>
 
 <p class="figure-caption">図は基本的にhtmlで書いたほうがよい。imgタグを使う。</p>
 
