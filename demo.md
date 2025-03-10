@@ -109,20 +109,20 @@ tokenizer.convert_ids_to_tokens(outputs.logits[0][1:-1].argmax(axis=-1))
 
 ---
 
-<!-- _header: 高さ指定可能な左右レイアウト -->
+<!-- _header: 左右分割を重ねる例 -->
 
-<div class="flex-container flex-container-h300">
-  <div class="flex-left"><img src="./images/kenkyu_woman_seikou.png" height="250"></div>
-  <div class="flex-right">
+<div class="grid split-30-65 h300">
+  <div><img src="./images/kenkyu_woman_seikou.png" height="250"></div>
+  <div>
 
 ## 高さを変更可能
-以下のクラスで高さを変更可能：`flex-container-h300`, `flex-container-h400`, `flex-container-h500`
+以下のクラスで高さを変更可能：`h300`, `h400`, `h500`
 
   </div>
 </div>
-<div class="flex-container flex-container-h300">
-  <div class="flex-left"><img src="./images/kenkyu_woman_seikou.png" height="250"></div>
-  <div class="flex-right">
+<div class="grid split-30-65 h300">
+  <div><img src="./images/kenkyu_woman_seikou.png" height="250"></div>
+  <div>
 
 ## 一貫性のあるレイアウト
 このレイアウトは、図表と説明文を組み合わせた場合に特に効果的です。高さが固定されているため、**スライド間の一貫性が保たれます。**
@@ -144,8 +144,8 @@ tokenizer.convert_ids_to_tokens(outputs.logits[0][1:-1].argmax(axis=-1))
 
 ## コンテンツ
 
-- 画像は左側40%の領域に配置
-- テキストは右側55%の領域に配置
+- 画像は左側30%の領域に配置
+- テキストは右側65%の領域に配置
 - 画像は自動的に垂直方向中央揃え
 - 箇条書きなどの通常のMarkdown記法が使用可能
   - ネストされた項目

@@ -131,79 +131,119 @@ section.center-box {
   text-align: center;
 }
 
-/* Dynamic grid layout */
+/* Dynamic grid layout with optional height settings */
 .grid {
   display: grid;
   width: 100%;
   height: 100%;
 }
 
-/* Grid splits from 20:75 to 80:15 in steps of 5 */
+/* Grid splits from 20:75 to 80:15 in steps of 5 with height variants */
 .split-20-75 {
   grid-template-columns: 20% 75% !important;
   gap: 5%;
 }
+.split-20-75.h300 { height: 300px; }
+.split-20-75.h400 { height: 400px; }
+.split-20-75.h500 { height: 500px; }
 
 .split-25-70 {
   grid-template-columns: 25% 70% !important;
   gap: 5%;
 }
+.split-25-70.h300 { height: 300px; }
+.split-25-70.h400 { height: 400px; }
+.split-25-70.h500 { height: 500px; }
 
 .split-30-65 {
   grid-template-columns: 30% 65% !important;
   gap: 5%;
 }
+.split-30-65.h300 { height: 300px; }
+.split-30-65.h400 { height: 400px; }
+.split-30-65.h500 { height: 500px; }
 
 .split-35-60 {
   grid-template-columns: 35% 60% !important;
   gap: 5%;
 }
+.split-35-60.h300 { height: 300px; }
+.split-35-60.h400 { height: 400px; }
+.split-35-60.h500 { height: 500px; }
 
 .split-40-55 {
   grid-template-columns: 40% 55% !important;
   gap: 5%;
 }
+.split-40-55.h300 { height: 300px; }
+.split-40-55.h400 { height: 400px; }
+.split-40-55.h500 { height: 500px; }
 
 .split-45-50 {
   grid-template-columns: 45% 50% !important;
   gap: 5%;
 }
+.split-45-50.h300 { height: 300px; }
+.split-45-50.h400 { height: 400px; }
+.split-45-50.h500 { height: 500px; }
 
 .split-50-45 {
   grid-template-columns: 50% 45% !important;
   gap: 5%;
 }
+.split-50-45.h300 { height: 300px; }
+.split-50-45.h400 { height: 400px; }
+.split-50-45.h500 { height: 500px; }
 
 .split-55-40 {
   grid-template-columns: 55% 40% !important;
   gap: 5%;
 }
+.split-55-40.h300 { height: 300px; }
+.split-55-40.h400 { height: 400px; }
+.split-55-40.h500 { height: 500px; }
 
 .split-60-35 {
   grid-template-columns: 60% 35% !important;
   gap: 5%;
 }
+.split-60-35.h300 { height: 300px; }
+.split-60-35.h400 { height: 400px; }
+.split-60-35.h500 { height: 500px; }
 
 .split-65-30 {
   grid-template-columns: 65% 30% !important;
   gap: 5%;
 }
+.split-65-30.h300 { height: 300px; }
+.split-65-30.h400 { height: 400px; }
+.split-65-30.h500 { height: 500px; }
 
 .split-70-25 {
   grid-template-columns: 70% 25% !important;
   gap: 5%;
 }
+.split-70-25.h300 { height: 300px; }
+.split-70-25.h400 { height: 400px; }
+.split-70-25.h500 { height: 500px; }
 
 .split-75-20 {
   grid-template-columns: 75% 20% !important;
   gap: 5%;
 }
+.split-75-20.h300 { height: 300px; }
+.split-75-20.h400 { height: 400px; }
+.split-75-20.h500 { height: 500px; }
 
 .split-80-15 {
   grid-template-columns: 80% 15% !important;
   gap: 5%;
 }
+.split-80-15.h300 { height: 300px; }
+.split-80-15.h400 { height: 400px; }
+.split-80-15.h500 { height: 500px; }
 
+/* Grid container child elements */
 .grid > div {
   display: flex;
   flex-direction: column;
@@ -296,44 +336,4 @@ h3 {
   padding-left: 12px;
   margin-left: -20px;
   font-size: 1.0em;
-}
-
-/* 高さ指定可能な左右レイアウト */
-.flex-container {
-  display: flex;
-  gap: 2rem;
-  width: 100%;
-  margin: 0.2rem 0;
-}
-
-.flex-container-h300 {
-  height: 300px;
-}
-
-.flex-container-h400 {
-  height: 400px;
-}
-
-.flex-container-h500 {
-  height: 500px;
-}
-
-.flex-left {
-  flex: 0 0 25%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.flex-right {
-  flex: 0 0 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.flex-left img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
 }
