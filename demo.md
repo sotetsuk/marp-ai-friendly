@@ -162,19 +162,19 @@ h3の見出しにも同様の縦棒が表示されます。
 <!-- _header: 高さ指定可能な左右レイアウト -->
 
 <div class="flex-container flex-container-h300">
-  <div class="flex-left"><img src="./images/kenkyu_woman_seikou.png" width="250"></div>
+  <div class="flex-left"><img src="./images/kenkyu_woman_seikou.png" height="250"></div>
   <div class="flex-right">
 
+### 高さを変更可能
 以下のクラスで高さを変更可能：`flex-container-h300`, `flex-container-h400`, `flex-container-h500`
 
   </div>
 </div>
-
-
 <div class="flex-container flex-container-h300">
-  <div class="flex-left"><img src="./images/kenkyu_woman_seikou.png" width="250"></div>
+  <div class="flex-left"><img src="./images/kenkyu_woman_seikou.png" height="250"></div>
   <div class="flex-right">
 
+### 一貫性のあるレイアウト
 このレイアウトは、図表と説明文を組み合わせた場合に特に効果的です。高さが固定されているため、**スライド間の一貫性が保たれます。**
 
   </div>
