@@ -97,6 +97,11 @@ code {
   font-family: 'Source Code Pro', monospace;
 }
 
+/* Add default bold text color */
+strong {
+  color: rgb(252, 55, 63);
+}
+
 /* Center box style */
 section.center-box {
   display: flex;
@@ -150,19 +155,15 @@ section.center-box {
 
 /* Colored bold text styles */
 .r {
-  color: #ff0000;
+  color: rgb(252, 55, 63);
   font-weight: bold;
 }
 
 .b {
-  color: #0000ff;
+  color: rgb(12, 91, 175);
   font-weight: bold;
 }
 
-.g {
-  color: #008000;
-  font-weight: bold;
-}
 
 /* Figure with caption style */
 .figure-with-caption {
