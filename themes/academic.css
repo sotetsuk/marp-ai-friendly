@@ -109,5 +109,15 @@ section.center-box {
   border: 3px solid var(--color-highlight);
   padding: 2rem 4rem;
   border-radius: 8px;
+  text-align: left;
+  min-width: 60%;
+}
+
+.box-content h1,
+.box-content h2,
+.box-content h3,
+.box-content h4,
+.box-content h5,
+.box-content h6 {
   text-align: center;
 }

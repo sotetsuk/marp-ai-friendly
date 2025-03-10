@@ -101,9 +101,10 @@ $$
 
 <div class="box-content">
 
-# 重要なメッセージ
-
-研究室での発表を<br>
-もっと魅力的に！
+_"The biggest lesson that can be read from 70 years of AI research is that general methods that leverage computation are ultimately the most effective, and by a large margin."_ — R. Sutton [2019], "The Bitter Lesson."
 
 </div>
+
+---
+
+<!-- _header: 中央ボックス -->
