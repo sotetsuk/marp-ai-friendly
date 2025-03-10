@@ -29,7 +29,7 @@ Your NAME (YYYY/MM/DD)
 
 <!-- _header: 数式 -->
 
-数式は4行までしか入らない。左右分割はしない方がよい。
+数式は**4行**までしか入らない。左右分割はしない方がよい。
 
 $$
 \begin{array}{c}{{\displaystyle{\mathrm{NLL}}(\mu,\sigma^{2})\\
@@ -47,7 +47,7 @@ $$
 <!-- _header: 図とキャプション -->
 <div class="fig-group">
   <div class="fig-row">
-    <img src="./images/kenkyu_woman_seikou.png" width="300">
+    <img src="./images/kenkyu_woman_seikou.png" width="350">
   </div>
   <p class="fig-caption">ここには図から読み取れるメッセージを書く。</p>
 </div>
