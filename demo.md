@@ -97,20 +97,6 @@ tokenizer.convert_ids_to_tokens(outputs.logits[0][1:-1].argmax(axis=-1))
 
 ---
 
-<!-- _header: 中央ボックス -->
-
-<!-- _class: center-box -->
-
-<div class="box-content">
-
-_"The biggest lesson that can be read from 70 years of AI research is that general methods that **leverage computation** are ultimately the most effective, and by a large margin."_
-
-— R. Sutton [2019], "The Bitter Lesson."
-
-</div>
-
----
-
 <!-- _header: 見出しスタイルの例 -->
 
 ## 青色の縦棒付き見出し（h2）
@@ -194,3 +180,18 @@ if __name__ == "__main__":
 ```
 </div>
 </div>
+
+---
+
+<!-- _header: 中央ボックス -->
+
+<!-- _class: center-box -->
+
+<div class="box-content">
+
+_"The biggest lesson that can be read from 70 years of AI research is that general methods that **leverage computation** are ultimately the most effective, and by a large margin."_
+
+— R. Sutton [2019], "The Bitter Lesson."
+
+</div>
+
