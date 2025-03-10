@@ -15,15 +15,6 @@ _Your NAME (YYYY/MM/DD)_
 
 ---
 
-<!-- _header: 目次 -->
-
-1. 見出し
-1. 数式
-1. コードブロック
-1. 図
-
----
-
 <!-- _header: 見出し -->
 
 ## 青色の縦棒付き見出し（h2）
@@ -50,22 +41,6 @@ $$
 インライン数式 $\mathbb{E}[x] = \int_{-\infty}^{\infty} x f(x) dx$ も使える。
 
 > 1: 脚注は小さい文字で下に表示される
-
----
-
-<!-- _header: コードブロック -->
-
-```python
-from transformers import AutoModelForMaskedLM, AutoTokenizer
-model = AutoModelForMaskedLM.from_pretrained("cl-tohoku/bert-base-japanese-whole-word-masking")
-tokenizer = AutoTokenizer.from_pretrained("cl-tohoku/bert-base-japanese-whole-word-masking")
-
-inputs = tokenizer.encode_plus("私はとても[MASK]です。", return_tensors='pt')
-outputs = model(**inputs)
-tokenizer.convert_ids_to_tokens(outputs.logits[0][1:-1].argmax(axis=-1))
-```
-
-横幅は自動調整される（ドキュメントの[Auto-scaling](https://github.com/marp-team/marp-core#auto-scaling-features)を参照）。
 
 ---
 
