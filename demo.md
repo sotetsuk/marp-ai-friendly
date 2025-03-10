@@ -7,7 +7,7 @@ math: katex
 
 <!-- _class: lead -->
 
-# MarpによるAI-friendlyなスライド
+# AI-friendly slide by Marp
 
 <br>
 
