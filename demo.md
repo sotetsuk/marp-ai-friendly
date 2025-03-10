@@ -72,10 +72,12 @@ tokenizer.convert_ids_to_tokens(outputs.logits[0][1:-1].argmax(axis=-1))
 <!-- _header: 図とキャプション -->
 <div class="fig-group">
   <div class="fig-row">
-    <img src="./images/kenkyu_woman_seikou.png" width="400">
+    <img src="./images/kenkyu_woman_seikou.png" width="300">
   </div>
-  <p class="fig-caption">図は基本的にhtmlで書いたほうがよい。imgタグを使う。</p>
+  <p class="fig-caption">ここには図から読み取れるメッセージを書く。</p>
 </div>
+
+> 図のその他の細かい説明（どのように作ったか、縦軸、横軸は何か等）は脚注に書く。図は基本的にhtmlで書いたほうがよい。imgタグを使う。説明が長くなる場合は `<split-style>` を使う。
 
 ---
 
@@ -86,7 +88,7 @@ tokenizer.convert_ids_to_tokens(outputs.logits[0][1:-1].argmax(axis=-1))
     <img src="./images/kenkyu_woman_seikou.png" width="400">
     <img src="./images/kenkyu_woman_seikou.png" width="400">
   </div>
-  <p class="fig-caption">研究に成功した女性研究者たち</p>
+  <p class="fig-caption">ここには図から読み取れるメッセージを書く。</p>
 </div>
 
 ---
@@ -99,7 +101,7 @@ tokenizer.convert_ids_to_tokens(outputs.logits[0][1:-1].argmax(axis=-1))
     <img src="./images/kenkyu_woman_seikou.png" width="300">
     <img src="./images/kenkyu_woman_seikou.png" width="300">
   </div>
-  <p class="fig-caption">研究に成功した女性研究者たち</p>
+  <p class="fig-caption">ここには図から読み取れるメッセージを書く。</p>
 </div>
 
 ---
