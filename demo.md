@@ -19,9 +19,8 @@ _YYYY/MM/DD_
 
 <!-- _header: 目次 -->
 
-1. はじめに
-1. コードブロック
 1. 数式
+1. コードブロック
 1. 図
 
 
@@ -60,7 +59,7 @@ tokenizer.convert_ids_to_tokens(outputs.logits[0][1:-1].argmax(axis=-1))
 
 ---
 
-<!-- _header: 図とキャプション -->
+<!-- _header: 図とキャプション `<one-figure-style>` -->
 
 <div class="figures-group">
 
@@ -74,7 +73,7 @@ tokenizer.convert_ids_to_tokens(outputs.logits[0][1:-1].argmax(axis=-1))
 
 ---
 
-<!-- _header: 2つの図を横に並べる -->
+<!-- _header: 2つの図とキャプション `<two-figures-style>` -->
 
 <div class="figures-group">
   <div class="figures-row-nocaption">
@@ -86,7 +85,7 @@ tokenizer.convert_ids_to_tokens(outputs.logits[0][1:-1].argmax(axis=-1))
 
 ---
 
-<!-- _header: 3つの図を横に並べる -->
+<!-- _header: 3つの図を横に並べる `<three-figures-style>` -->
 
 <div class="figures-group">
   <div class="figures-row-nocaption">
@@ -111,30 +110,7 @@ tokenizer.convert_ids_to_tokens(outputs.logits[0][1:-1].argmax(axis=-1))
 
 ---
 
-<!-- _header: 左右分割を重ねる例 -->
-
-<div class="grid split-30-65 h300">
-  <div><img src="./images/kenkyu_woman_seikou.png" height="250"></div>
-  <div>
-
-## 高さを変更可能
-以下のクラスで高さを変更可能：`h300`, `h400`, `h500`
-
-  </div>
-</div>
-<div class="grid split-30-65 h300">
-  <div><img src="./images/kenkyu_woman_seikou.png" height="250"></div>
-  <div>
-
-## 一貫性のあるレイアウト
-このレイアウトは、図表と説明文を組み合わせた場合に特に効果的です。高さが固定されているため、**スライド間の一貫性が保たれます。**
-
-  </div>
-</div>
-
----
-
-<!-- _header: 左右レイアウト (30:65%) -->
+<!-- _header: 左右レイアウト (30:65%) `<split-style>` -->
 
 <div class="grid split-30-65">
 <div>
@@ -158,7 +134,7 @@ tokenizer.convert_ids_to_tokens(outputs.logits[0][1:-1].argmax(axis=-1))
 
 ---
 
-<!-- _header: 左右レイアウト (40:55%) -->
+<!-- _header: 左右レイアウト (40:55%) `<split-style>` -->
 
 <div class="grid split-40-55">
 <div>
@@ -180,12 +156,37 @@ def hello():
 if __name__ == "__main__":
     hello()
 ```
+
 </div>
 </div>
 
 ---
 
+<!-- _header: 左右分割を重ねる例  `<split-style>` x2 -->
+
+<div class="grid split-30-65 h300">
+  <div><img src="./images/kenkyu_woman_seikou.png" height="250"></div>
+  <div>
+
+## 高さを変更可能
+以下のクラスで高さを変更可能：`h300`, `h400`, `h500`
+
+  </div>
+</div>
+<div class="grid split-30-65 h300">
+  <div><img src="./images/kenkyu_woman_seikou.png" height="250"></div>
+  <div>
+
+## 一貫性のあるレイアウト
+このレイアウトは、図表と説明文を組み合わせた場合に特に効果的です。高さが固定されているため、**スライド間の一貫性が保たれます。**
+
+  </div>
+</div>
+
+---
+
 <!-- _header: 中央ボックス -->
+
 
 <!-- _class: center-box -->
 
