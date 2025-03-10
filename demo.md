@@ -128,4 +128,15 @@ _"The biggest lesson that can be read from 70 years of AI research is that gener
 - 数式も使用可能: $E = mc^2$
 
 </div>
+
+---
+
+<!-- _header: 図とキャプション -->
+
+<div class="figure-with-caption">
+
+<img src="./images/kenkyu_woman_seikou.png" width="400">
+
+<p class="figure-caption">研究に成功した女性研究者のイラスト</p>
+
 </div>

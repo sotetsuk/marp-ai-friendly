@@ -163,3 +163,23 @@ section.center-box {
   color: #008000;
   font-weight: bold;
 }
+
+/* Figure with caption style */
+.figure-with-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.figure-caption {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+  z-index: 1;
+  position: relative;
+}
