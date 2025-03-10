@@ -147,3 +147,19 @@ section.center-box {
   max-height: 80vh;
   object-fit: contain;
 }
+
+/* Colored bold text styles */
+.r {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.b {
+  color: #0000ff;
+  font-weight: bold;
+}
+
+.g {
+  color: #008000;
+  font-weight: bold;
+}

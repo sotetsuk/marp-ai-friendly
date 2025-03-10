@@ -124,7 +124,7 @@ _"The biggest lesson that can be read from 70 years of AI research is that gener
 - 画像は自動的に垂直方向中央揃え
 - 箇条書きなどの通常のMarkdown記法が使用可能
   - ネストされた項目
-  - **強調** や *イタリック* も使える
+  - <span class="r">強調</span> や _<span class="b">イタリック</span>_ も使える
 - 数式も使用可能: $E = mc^2$
 
 </div>
