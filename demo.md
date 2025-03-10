@@ -218,15 +218,18 @@ h3の見出しにも同様の縦棒が表示されます。
 </div>
 <div>
 
-### コンテンツ
+実装例
 
-- 画像は左側40%の領域に配置
-- テキストは右側55%の領域に配置
-- 画像は自動的に垂直方向中央揃え
-- 箇条書きなどの通常のMarkdown記法が使用可能
-  - ネストされた項目
-  - <span class="r">強調</span> や _<span class="b">イタリック</span>_ も使える
+```py
+import torch
+print(torch.cuda.is_available())
 
+def hello():
+    print("Hello, World!")
+
+if __name__ == "__main__":
+    hello()
+```
 </div>
 </div>
 
