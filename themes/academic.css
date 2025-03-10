@@ -256,19 +256,6 @@ strong {
 }
 
 
-/* Center box style */
-.box-content {
-  border: 3px solid var(--color-gray);
-  background-color: var(--color-gray);
-  padding: 1rem 2rem;
-  border-radius: 30px;
-  width: 80%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 /* blue box style */
 .blue-box {
   border: 2px solid var(--color-highlight);
@@ -280,6 +267,15 @@ strong {
 
 .blue-box.center {
   text-align: center;
+}
+
+.blue-box.centered-full {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
 }
 
 .blue-box > :first-child {

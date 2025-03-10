@@ -183,11 +183,9 @@ if __name__ == "__main__":
 
 <!-- _header: 中央ボックス -->
 
-<div class="box-content">
+<div class="blue-box centered-full">
 
-_"The biggest lesson that can be read from 70 years of AI research is that general methods that **leverage computation** are ultimately the most effective, and by a large margin."_
-
-— R. Sutton [2019], "The Bitter Lesson."
+_"The biggest lesson that can be read from 70 years of AI research is that general methods that **leverage computation** are ultimately the most effective, and by a large margin."_ — R. Sutton [2019], "The Bitter Lesson."
 
 </div>
 
