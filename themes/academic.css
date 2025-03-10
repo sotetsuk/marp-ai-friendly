@@ -121,3 +121,29 @@ section.center-box {
 .box-content h6 {
   text-align: center;
 }
+
+.grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-cols-2 {
+  grid-template-columns: 40% 55%;
+  gap: 5%;
+}
+
+.grid > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid > div:first-child {
+  align-items: center;
+}
+
+.grid > div img {
+  max-height: 80vh;
+  object-fit: contain;
+}

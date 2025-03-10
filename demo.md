@@ -107,4 +107,25 @@ _"The biggest lesson that can be read from 70 years of AI research is that gener
 
 ---
 
-<!-- _header: 中央ボックス -->
+<!-- _header: 左右レイアウトの例 -->
+
+<div class="grid grid-cols-2 gap-4">
+<div>
+
+![](./images/kenkyu_woman_seikou.png)
+
+</div>
+<div>
+
+## 研究成果の例
+
+- 画像は左側40%の領域に配置
+- テキストは右側55%の領域に配置
+- 画像は自動的に垂直方向中央揃え
+- 箇条書きなどの通常のMarkdown記法が使用可能
+  - ネストされた項目
+  - **強調** や *イタリック* も使える
+- 数式も使用可能: $E = mc^2$
+
+</div>
+</div>
