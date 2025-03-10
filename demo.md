@@ -177,5 +177,6 @@ _"The biggest lesson that can be read from 70 years of AI research is that gener
 h3の見出しにも同様の縦棒が表示されます。
 
 - 箇条書きなどの通常の要素と組み合わせても
-- きれいに表示されます
-  - 入れ子の箇条書きも問題ありません
+
+### より小さな見出し（h3）
+h3の見出しにも同様の縦棒が表示されます。

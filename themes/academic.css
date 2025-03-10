@@ -220,11 +220,15 @@ section.center-box {
 h2 {
   border-left: 20px solid rgb(12, 91, 175);
   padding-left: 12px;
-  margin-left: -20px;  /* -32pxから-20pxに変更して右寄せ */
+  margin-left: -20px;
+  font-size: 1.3em;
+  color: rgb(12, 91, 175);
 }
 
 h3 {
   border-left: 20px solid rgb(12, 91, 175);
   padding-left: 12px;
-  margin-left: -20px;  /* -32pxから-20pxに変更して右寄せ */
+  margin-left: -20px;
+  font-size: 1.1em;
+  color: rgb(12, 91, 175);
 }
