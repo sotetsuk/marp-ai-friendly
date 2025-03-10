@@ -101,7 +101,7 @@ $$
 
 <div class="box-content">
 
-_"The biggest lesson that can be read from 70 years of AI research is that general methods that leverage computation are ultimately the most effective, and by a large margin."_
+_"The biggest lesson that can be read from 70 years of AI research is that general methods that **leverage computation** are ultimately the most effective, and by a large margin."_
 
 — R. Sutton [2019], "The Bitter Lesson."
 

@@ -239,7 +239,7 @@ section.center-box {
 }
 
 .figure-caption {
-  background-color: #000;
+  background-color: rgb(38, 38, 38);
   color: #fff;
   padding: 0.5rem 2rem;
   border-radius: 4px;
