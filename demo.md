@@ -56,7 +56,7 @@ $$
 
 ---
 
-<!-- _header: 2つの図とキャプション `<two-figures-style>` -->
+<!-- _header: 2つの図とキャプション -->
 
 <div class="fig-group">
   <div class="fig-row">
@@ -68,7 +68,7 @@ $$
 
 ---
 
-<!-- _header: 3つの図を横に並べる `<three-figures-style>` -->
+<!-- _header: 3つの図を横に並べる -->
 
 <div class="fig-group">
   <div class="fig-row">
@@ -81,7 +81,7 @@ $$
 
 ---
 
-<!-- _header: 左右レイアウト (30:65%) `<split-style>` -->
+<!-- _header: 左右レイアウト (30:65%)  -->
 
 <div class="grid split-30-65">
 <div>
@@ -105,7 +105,7 @@ $$
 
 ---
 
-<!-- _header: 左右レイアウト (40:55%) `<split-style>` -->
+<!-- _header: 左右レイアウト (40:55%) -->
 
 <div class="grid split-40-55">
 <div>
@@ -133,7 +133,7 @@ if __name__ == "__main__":
 
 ---
 
-<!-- _header: 左右分割を重ねる例  `<split-style>` x2 -->
+<!-- _header: 左右分割を重ねる例  -->
 
 <div class="grid split-30-65 h300">
   <div><img src="./images/kenkyu_woman_seikou.png" height="250"></div>
