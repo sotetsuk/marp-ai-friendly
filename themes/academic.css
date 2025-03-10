@@ -275,6 +275,7 @@ strong {
   border-radius: 8px;
   padding: 0.8rem 1.2rem;
   margin: 1rem 0;
+  background-color: rgba(12, 91, 175, 0.1);
 }
 
 .theorem-box.center {
