@@ -35,24 +35,24 @@ section.lead h1 {
   color: var(--color-highlight);
   text-align: left;
 }
+
 section.lead h1 strong {
   -webkit-text-stroke: 1px var(--color-highlight);
 }
 
 h2 {
   border-left: 20px solid var(--color-highlight);
-  padding-left: 12px;
-  margin-left: -20px;
-  font-size: 1.0em;
   color: var(--color-highlight);
+  font-size: 1.0em;
+  margin-left: -20px;
+  padding-left: 12px;
 }
 
 h3 {
-  padding-left: 12px;
-  margin-left: -20px;
   font-size: 1.0em;
+  margin-left: -20px;
+  padding-left: 12px;
 }
-
 
 header {
   background-color: var(--color-highlight);
