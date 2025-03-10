@@ -8,6 +8,9 @@
   --color-background: #fff;
   --color-foreground: #333;
   --color-highlight: rgb(12, 91, 175);
+  --color-accent: rgb(252, 55, 63);
+  --color-gray: rgb(239, 239, 239);
+  --color-dark: rgb(38, 38, 38);
 }
 
 section {
@@ -29,47 +32,47 @@ ul ul {
 }
 
 section.lead h1 {
-  color: rgb(12, 91, 175);
+  color: var(--color-highlight);
   text-align: left;
 }
 section.lead h1 strong {
-  -webkit-text-stroke: 1px rgb(12, 91, 175);
+  -webkit-text-stroke: 1px var(--color-highlight);
 }
 section.lead h2 {
-  color: rgb(12, 91, 175);
+  color: var(--color-highlight);
   text-align: left;
 }
 section.lead h2 strong {
-  -webkit-text-stroke: 1px rgb(12, 91, 175);
+  -webkit-text-stroke: 1px var(--color-highlight);
 }
 section.lead h3 {
-  color: rgb(12, 91, 175);
+  color: var(--color-highlight);
   text-align: left;
 }
 section.lead h3 strong {
-  -webkit-text-stroke: 1px rgb(12, 91, 175);
+  -webkit-text-stroke: 1px var(--color-highlight);
 }
 section.lead h4 {
-  color: rgb(12, 91, 175);
+  color: var(--color-highlight);
   text-align: left;
 }
 section.lead h4 strong {
-  -webkit-text-stroke: 1px rgb(12, 91, 175);
+  -webkit-text-stroke: 1px var(--color-highlight);
 }
 section.lead h5 {
-  color: rgb(12, 91, 175);
+  color: var(--color-highlight);
   text-align: left;
 }
 section.lead h5 strong {
-  -webkit-text-stroke: 1px rgb(12, 91, 175);
+  -webkit-text-stroke: 1px var(--color-highlight);
 }
 section.lead p {
   text-align: right;
 }
 
 header {
-  background-color: rgb(12, 91, 175);
-  color: #fff;
+  background-color: var(--color-highlight);
+  color: var(--color-background);
   font-size: 1em;
   font-weight: 700;
 }
@@ -99,7 +102,7 @@ code {
 
 /* Add default bold text color */
 strong {
-  color: rgb(252, 55, 63);
+  color: var(--color-accent);
 }
 
 /* Center box style */
@@ -111,12 +114,12 @@ section.center-box {
 }
 
 .box-content {
-  border: 3px solid rgb(239, 239, 239);
+  border: 3px solid var(--color-gray);
   padding: 1rem 2rem;
   border-radius: 30px;
   text-align: left;
   min-width: 60%;
-  background-color: rgb(239, 239, 239);
+  background-color: var(--color-gray);
 }
 
 .box-content h1,
@@ -218,12 +221,12 @@ section.center-box {
 
 /* Colored bold text styles */
 .r {
-  color: rgb(252, 55, 63);
+  color: var(--color-accent);
   font-weight: bold;
 }
 
 .b {
-  color: rgb(12, 91, 175);
+  color: var(--color-highlight);
   font-weight: bold;
 }
 
@@ -239,8 +242,8 @@ section.center-box {
 }
 
 .figure-caption {
-  background-color: rgb(38, 38, 38);
-  color: #fff;
+  background-color: var(--color-dark);
+  color: var(--color-background);
   padding: 0.5rem 2rem;
   border-radius: 4px;
   font-size: 0.9em;
@@ -282,11 +285,11 @@ section.center-box {
 
 /* 見出しの縦棒スタイルを更新 */
 h2 {
-  border-left: 20px solid rgb(12, 91, 175);
+  border-left: 20px solid var(--color-highlight);
   padding-left: 12px;
   margin-left: -20px;
   font-size: 1.0em;
-  color: rgb(12, 91, 175);
+  color: var(--color-highlight);
 }
 
 h3 {
