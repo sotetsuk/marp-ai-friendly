@@ -88,21 +88,16 @@ strong {
   color: var(--color-accent);
 }
 
-/* Center box style */
-section.center-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
 .box-content {
   border: 3px solid var(--color-gray);
+  background-color: var(--color-gray);
   padding: 1rem 2rem;
   border-radius: 30px;
-  text-align: left;
-  min-width: 60%;
-  background-color: var(--color-gray);
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Dynamic grid layout with optional height settings */
