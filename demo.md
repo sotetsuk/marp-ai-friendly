@@ -107,7 +107,7 @@ $$
 
 <!-- _header: 左右レイアウト (40:55%) -->
 
-<div class="grid split-40-55">
+<div class="grid split-40-55 h500">
 <div>
 
 <img src="./images/kenkyu_woman_seikou.png" width="400">
