@@ -47,12 +47,12 @@ $$
 <!-- _header: 図とキャプション -->
 <div class="fig-group">
   <div class="fig-row">
-    <img src="./images/kenkyu_woman_seikou.png" width="350">
+    <img src="./images/kenkyu_woman_seikou.png" width="300">
   </div>
   <p class="fig-caption">ここには図から読み取れるメッセージを書く。</p>
 </div>
 
-> 図のその他の細かい説明（どのように作ったか、縦軸、横軸は何か等）は脚注に書く。図は基本的にhtmlで書いたほうがよい。imgタグを使う。
+> 図のその他の細かい説明は脚注に書く。長い説明が必要な場合は左右分割レイアウトを使う。
 
 ---
 

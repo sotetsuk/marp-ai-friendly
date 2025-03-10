@@ -96,8 +96,10 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: var(--space-md);
-  margin: var(--space-xl) 0;
+  margin: var(--space-xl) auto;
+  height: 100%;
 }
 
 .fig-row {
