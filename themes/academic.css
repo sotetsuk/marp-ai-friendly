@@ -33,13 +33,12 @@ ul ul {
 
 section.lead h1 {
   color: var(--color-highlight);
-  text-align: left;
+  text-align: center;
 }
 
 section.lead h1 strong {
   -webkit-text-stroke: 1px var(--color-highlight);
 }
-
 h2 {
   border-left: 20px solid var(--color-highlight);
   color: var(--color-highlight);
@@ -104,15 +103,6 @@ section.center-box {
   text-align: left;
   min-width: 60%;
   background-color: var(--color-gray);
-}
-
-.box-content h1,
-.box-content h2,
-.box-content h3,
-.box-content h4,
-.box-content h5,
-.box-content h6 {
-  text-align: center;
 }
 
 /* Dynamic grid layout with optional height settings */

@@ -9,11 +9,9 @@ math: katex
 
 # MarpによるAI-friendlyなスライド
 
-
 <br>
 
-_Your NAME_
-_YYYY/MM/DD_
+_Your NAME (YYYY/MM/DD)_
 
 ---
 
@@ -197,4 +195,3 @@ _"The biggest lesson that can be read from 70 years of AI research is that gener
 — R. Sutton [2019], "The Bitter Lesson."
 
 </div>
-
