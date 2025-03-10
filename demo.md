@@ -158,7 +158,7 @@ if __name__ == "__main__":
 
 <!-- _header: 中央ボックス -->
 
-<div class="blue-box centered-full">
+<div class="box dark centered-full">
 
 _"The biggest lesson that can be read from 70 years of AI research is that general methods that **leverage computation** are ultimately the most effective, and by a large margin."_ — R. Sutton [2019], "The Bitter Lesson."
 
@@ -170,7 +170,7 @@ _"The biggest lesson that can be read from 70 years of AI research is that gener
 
 <!-- _header: 定理ボックス -->
 
-<div class="blue-box">
+<div class="box blue">
 
 <span class="b">定理 1</span> (Fundamental blue)
 任意の正の実数 $x$ について、次が成り立つ：
@@ -194,7 +194,7 @@ $$
 
 <div class="grid split-45-50">
 <div>
-<div class="blue-box">
+<div class="box blue">
 
 <span class="b">補題</span> $f(x)$ が区間 $[a,b]$ で連続ならば、
 $$
@@ -209,9 +209,9 @@ $$
 - 定理ボックスは左右分割レイアウトと組み合わせ可能
 - 証明のステップや補足説明を右側に配置できる
 
-<div class="blue-box center">
+<div class="box red center">
 
-<span class="b">結論: 数式との相性も良好</span> 
+<span class="r">結論: 数式との相性も良好</span> 
 
 </div>
 

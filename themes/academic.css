@@ -256,20 +256,36 @@ strong {
 }
 
 
-/* blue box style */
-.blue-box {
-  border: 2px solid var(--color-highlight);
+/* Base box style */
+.box {
+  border: 2px solid;
   border-radius: 8px;
   padding: 0.8rem 1.2rem;
   margin: 1rem 0;
+}
+
+/* Box color variants */
+.box.blue {
+  border-color: var(--color-highlight);
   background-color: rgba(12, 91, 175, 0.1);
 }
 
-.blue-box.center {
+.box.dark {
+  border-color: var(--color-dark);
+  background-color: rgba(38, 38, 38, 0.1);
+}
+
+.box.red {
+  border-color: var(--color-accent);
+  background-color: rgba(252, 55, 63, 0.1);
+}
+
+/* Box modifiers */
+.box.center {
   text-align: center;
 }
 
-.blue-box.centered-full {
+.box.centered-full {
   margin: auto;
   position: absolute;
   top: 50%;
@@ -278,11 +294,12 @@ strong {
   width: 80%;
 }
 
-.blue-box > :first-child {
+/* Remove margin from first and last child elements */
+.box > :first-child {
   margin-top: 0;
 }
 
-.blue-box > :last-child {
+.box > :last-child {
   margin-bottom: 0;
 }
 
