@@ -127,14 +127,76 @@ section.center-box {
   text-align: center;
 }
 
+/* Dynamic grid layout */
 .grid {
   display: grid;
   width: 100%;
   height: 100%;
 }
 
-.grid-cols-2 {
-  grid-template-columns: 40% 55%;
+/* Grid splits from 20:75 to 80:15 in steps of 5 */
+.split-20-75 {
+  grid-template-columns: 20% 75% !important;
+  gap: 5%;
+}
+
+.split-25-70 {
+  grid-template-columns: 25% 70% !important;
+  gap: 5%;
+}
+
+.split-30-65 {
+  grid-template-columns: 30% 65% !important;
+  gap: 5%;
+}
+
+.split-35-60 {
+  grid-template-columns: 35% 60% !important;
+  gap: 5%;
+}
+
+.split-40-55 {
+  grid-template-columns: 40% 55% !important;
+  gap: 5%;
+}
+
+.split-45-50 {
+  grid-template-columns: 45% 50% !important;
+  gap: 5%;
+}
+
+.split-50-45 {
+  grid-template-columns: 50% 45% !important;
+  gap: 5%;
+}
+
+.split-55-40 {
+  grid-template-columns: 55% 40% !important;
+  gap: 5%;
+}
+
+.split-60-35 {
+  grid-template-columns: 60% 35% !important;
+  gap: 5%;
+}
+
+.split-65-30 {
+  grid-template-columns: 65% 30% !important;
+  gap: 5%;
+}
+
+.split-70-25 {
+  grid-template-columns: 70% 25% !important;
+  gap: 5%;
+}
+
+.split-75-20 {
+  grid-template-columns: 75% 20% !important;
+  gap: 5%;
+}
+
+.split-80-15 {
+  grid-template-columns: 80% 15% !important;
   gap: 5%;
 }
 
