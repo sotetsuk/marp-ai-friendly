@@ -1,5 +1,5 @@
 {
     "markdown.marp.themes": [
-      "./themes/academic.css",
+      "./themes/ai_friendly.css",
     ]
 }
