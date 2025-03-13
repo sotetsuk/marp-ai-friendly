@@ -5,7 +5,7 @@ paginate: true
 math: katex
 ---
 
-# 機械学習入門
+# AI Friendly Theme
 
 <div class="author">Your Name (2025/01/01)</div>
 
