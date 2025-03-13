@@ -19,3 +19,6 @@
 }
 ```
 
+or clone this repo and open with GitHub codespace:
+
+![](images/screenshot.png)
