@@ -12,7 +12,7 @@ Add `.vscode/settings.json ` and open the markdown with VSCode.
 ```json
 {
     "markdown.marp.themes": [
-      "https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/heads/main/themes/ai_friendly.css",
+      "https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/tags/v1/themes/ai_friendly.css",
     ]
 }
 ```
