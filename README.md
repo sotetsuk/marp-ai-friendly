@@ -1,6 +1,7 @@
-# marp-theme-academic
+# Marp `ai-friendly` theme
 
-A fork of https://github.com/kaisugi/marp-theme-academic
+* A fork of https://github.com/kaisugi/marp-theme-academic
+* Design is highly insipired by [プレゼンデザイン (design4u.jp)](https://ppt.design4u.jp/)
 
 
 ## Usage 
