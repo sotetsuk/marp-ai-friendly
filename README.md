@@ -11,7 +11,7 @@
 2. install marp VSCode extension.
 3. open markdown file with VSCode.
 
-```json .vscode/settings.json
+```json:.vscode/settings.json
 {
     "markdown.marp.themes": [
       "https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/tags/v1/themes/ai_friendly.css",
