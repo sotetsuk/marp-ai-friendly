@@ -26,6 +26,6 @@ or clone this repo and open with GitHub codespace:
 
 ## TODOs
 
-* [ ] pass image ratio to llm `file xxx.jpg | grep -o '[0-9]\{2,5\}x[0-9]\{2,5\}' | tail -n 1 | awk -Fx '{print $1 / $2}'`
+* [x] Enhance code block visualizations
 * [ ] Enhance table visualizations
-* [ ] Enhance code block visualizations
+* [ ] pass image ratio to llm `file xxx.jpg | grep -o '[0-9]\{2,5\}x[0-9]\{2,5\}' | tail -n 1 | awk -Fx '{print $1 / $2}'`
