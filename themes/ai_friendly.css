@@ -48,13 +48,13 @@ section::after {
    ========================================================================== */
 
 h3 {
-  border-left: 20px solid var(--primary);
+  border-left: 15px solid var(--primary);
   color: var(--primary);
   font-size: 1.0em;
-  margin-left: -20px;
-  margin-top: 0.5em;
+  margin-left: 2px;
+  margin-top: 0.75em;
   margin-bottom: 0.5em;
-  padding-left: var(--space-sm);
+  padding-left: var(--space-xs);
 }
 
 h3 strong {
