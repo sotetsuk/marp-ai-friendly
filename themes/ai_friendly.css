@@ -143,6 +143,10 @@ h2 + * {
   margin-top: 2rem !important;
 }
 
+h2 + .figure-wrapper + h3 {
+  margin-top: 2rem !important;
+}
+
 /* Subsection Headers (h3) */
 h3 {
   font-family: var(--font-base);
