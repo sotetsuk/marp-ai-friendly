@@ -604,19 +604,338 @@ img[alt~="right"] {
 /* Print Styles
    ========================================================================== */
 @media print {
+  /* Reset root font size for consistent PDF output */
+  :root {
+    font-size: 16px !important;
+  }
+  
   section {
-    padding: 2rem;
-    box-shadow: none;
+    font-family: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 28px !important;
+    line-height: 1.7 !important;
+    padding: 64px 48px 48px !important;
+    box-shadow: none !important;
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+  }
+  
+  /* Fix pagination for PDF */
+  section::after {
+    font-family: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    color: #64748b !important;
+    position: absolute !important;
+    bottom: 4px !important;
+    right: 4px !important;
+  }
+  
+  /* Fix h1 size for PDF output */
+  h1 {
+    font-family: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 56px !important;
+    line-height: 1.2 !important;
+    color: #1e40af !important;
+    text-align: center !important;
+    position: absolute !important;
+    top: 40% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    margin: 0 !important;
+    letter-spacing: -0.025em !important;
+  }
+  
+  /* Fix h2 size for PDF output */
+  h2 {
+    font-family: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 36px !important;
+    line-height: 1.3 !important;
+    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%) !important;
+    color: #ffffff !important;
+    padding: 16px 32px !important;
+    margin: 0 !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    letter-spacing: -0.01em !important;
+    box-shadow: none !important;
+  }
+  
+  h2 strong {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+  }
+  
+  /* Ensure proper spacing after h2 for PDF */
+  h2 + * {
+    margin-top: 32px !important;
+  }
+  
+  h2 + .figure-wrapper + h3 {
+    margin-top: 32px !important;
+  }
+  
+  /* Fix h3 size for PDF output */
+  h3 {
+    font-family: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 28px !important;
+    line-height: 1.4 !important;
+    color: #1e40af !important;
+    margin: 20px 0 12px 0 !important;
+    padding: 8px 0 8px 24px !important;
+    border-left: 6px solid #1e40af !important;
+    position: relative !important;
+  }
+  
+  h3::before {
+    content: '' !important;
+    position: absolute !important;
+    left: -6px !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    width: 6px !important;
+    background: #1e40af !important;
+    box-shadow: none !important;
+  }
+  
+  h3 strong {
+    color: #1e3a8a !important;
+    font-weight: 700 !important;
+  }
+  
+  /* Fix blockquotes for PDF */
+  blockquote {
+    font-family: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-size: 28px !important;
+    line-height: 1.6 !important;
+    font-style: normal !important;
+    background: rgba(30, 64, 175, 0.08) !important;
+    border: none !important;
+    border-left: 4px solid #1e40af !important;
+    margin: 32px 0 !important;
+    padding: 24px 32px !important;
+    border-radius: 0 12px 12px 0 !important;
+    position: relative !important;
+    box-shadow: none !important;
+  }
+  
+  blockquote p {
+    margin: 0 !important;
+    position: relative !important;
+    z-index: 1 !important;
+  }
+  
+  blockquote strong {
+    color: #1e3a8a !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+  }
+  
+  /* Fix author information for PDF */
+  .author {
+    font-family: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 28px !important;
+    line-height: 1.5 !important;
+    color: #475569 !important;
+    text-align: center !important;
+    position: absolute !important;
+    top: 60% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    margin: 0 !important;
+  }
+  
+  /* Fix lists for PDF */
+  section ul, section ol {
+    margin: 24px 0 !important;
+    padding-left: 32px !important;
+  }
+  
+  section li {
+    margin: 12px 0 !important;
+    line-height: 1.6 !important;
+  }
+  
+  /* Fix code for PDF */
+  code {
+    font-family: 'JetBrains Mono', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    background: #f1f5f9 !important;
+    color: #1e3a8a !important;
+    padding: 4px 8px !important;
+    border-radius: 6px !important;
+    border: 1px solid #e2e8f0 !important;
   }
   
   pre {
-    box-shadow: none;
-    border: 1px solid var(--border-medium);
+    background: #1e293b !important;
+    color: #e2e8f0 !important;
+    padding: 24px 32px !important;
+    border-radius: 12px !important;
+    overflow-x: auto !important;
+    font-family: 'JetBrains Mono', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace !important;
+    font-size: 22px !important;
+    line-height: 1.6 !important;
+    margin: 32px 0 !important;
+    box-shadow: none !important;
+    border: 1px solid #cbd5e1 !important;
   }
   
+  pre code {
+    background: transparent !important;
+    color: inherit !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    font-size: inherit !important;
+  }
+  
+  /* Fix important boxes for PDF */
   .important {
-    box-shadow: none;
-    border: 2px solid var(--primary);
+    background: rgba(30, 64, 175, 0.08) !important;
+    border: 2px solid #1e40af !important;
+    border-radius: 12px !important;
+    padding: 24px !important;
+    margin: 32px 0 !important;
+    position: relative !important;
+    box-shadow: none !important;
+  }
+  
+  .important > * {
+    margin: 0 !important;
+    color: #1e3a8a !important;
+    font-weight: 500 !important;
+  }
+  
+  .important.center {
+    text-align: center !important;
+  }
+  
+  /* Fix tables for PDF */
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 32px 0 !important;
+    font-size: 24px !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    box-shadow: none !important;
+  }
+  
+  table th {
+    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%) !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 24px !important;
+    padding: 16px 24px !important;
+    text-align: left !important;
+    border: none !important;
+    letter-spacing: 0.025em !important;
+  }
+  
+  table td {
+    padding: 16px 24px !important;
+    border: none !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    background-color: #ffffff !important;
+  }
+  
+  table tr:nth-child(even) td {
+    background-color: #f8fafc !important;
+  }
+  
+  table tr:last-child td {
+    border-bottom: none !important;
+  }
+  
+  /* Fix figure wrapper for PDF */
+  .figure-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 32px 0 !important;
+    width: 100% !important;
+  }
+  
+  .figure-wrapper.center {
+    align-items: center !important;
+    text-align: center !important;
+  }
+  
+  .figure-wrapper.right {
+    float: right !important;
+    margin-left: 32px !important;
+    margin-bottom: 24px !important;
+    max-width: 45% !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    height: auto !important;
+  }
+  
+  .figure-wrapper img {
+    max-width: 100% !important;
+    max-height: 65vh !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 !important;
+  }
+  
+  .figure-wrapper p {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    color: #475569 !important;
+    margin: 16px 0 0 0 !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    line-height: 1.5 !important;
+  }
+  
+  .figure-wrapper.withtext {
+    margin: 24px 0 !important;
+    height: auto !important;
+  }
+  
+  .figure-wrapper.withtext img {
+    max-height: 350px !important;
+    margin: 0 !important;
+  }
+  
+  .figure-wrapper.withtext p {
+    margin-top: 12px !important;
+    font-size: 18px !important;
+  }
+  
+  /* Fix math typography for PDF */
+  .katex {
+    font-size: 1.1em !important;
+  }
+  
+  .katex-display {
+    margin: 16px 0 !important;
+    padding: 8px !important;
+  }
+  
+  /* Remove transitions and transforms for PDF */
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+  
+  /* Allow transforms only for positioning */
+  h1 {
+    transform: translate(-50%, -50%) !important;
+  }
+  
+  .author {
+    transform: translate(-50%, -50%) !important;
   }
 }
 
