@@ -157,3 +157,5 @@ def softmax(x):
 x = np.array([1, 2, 3])
 print(softmax(x))
 ```
+
+インラインコードブロック `code` は背景が薄い青にになります
