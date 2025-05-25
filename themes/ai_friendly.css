@@ -183,7 +183,7 @@ blockquote {
   font-family: var(--font-base);
   font-size: 1.875rem;
   line-height: 1.6;
-  font-style: italic;
+  font-style: normal;
   background: var(--primary-light);
   border: none;
   border-left: 4px solid var(--primary);
@@ -211,6 +211,7 @@ blockquote p {
 blockquote strong {
   color: var(--primary-dark);
   font-weight: 600;
+  font-style: normal;
 }
 
 /* Author Information
