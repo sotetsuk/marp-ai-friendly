@@ -88,11 +88,11 @@ section::after {
   color: var(--text-muted);
   content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
   position: absolute;
-  bottom: 0.125rem;
-  right: 1rem;
-  background: var(--background);
-  padding: 0.125rem 0.5rem;
-  border-radius: var(--radius-md);
+  bottom: 0.25rem;
+  right: 0.25rem;
+  background: none;
+  padding: 0;
+  border-radius: 0;
   z-index: 10;
 }
 
@@ -212,6 +212,10 @@ blockquote strong {
   color: var(--primary-dark);
   font-weight: 600;
   font-style: normal;
+}
+
+blockquote .katex-display:last-child {
+  margin-bottom: 0 !important;
 }
 
 /* Author Information
@@ -566,14 +570,14 @@ img[alt~="right"] {
   color: var(--text-muted);
   line-height: 1.5;
   position: absolute;
-  bottom: 1.5rem;
-  left: 3rem;
+  bottom: 0.5rem;
+  left: 1rem;
   right: 8rem;
-  padding: var(--space-md);
-  background: var(--surface);
-  border-radius: var(--radius-md);
-  border: 1px solid var(--border-light);
-  box-shadow: var(--shadow-sm);
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
 }
 
 /* Enhanced Math Typography
@@ -583,8 +587,8 @@ img[alt~="right"] {
 }
 
 .katex-display {
-  margin: var(--space-xl) 0 !important;
-  padding: var(--space-lg) !important;
+  margin: var(--space-md) 0 !important;
+  padding: var(--space-sm) !important;
 }
 
 /* Responsive Adjustments for Different Screen Sizes
