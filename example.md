@@ -41,7 +41,7 @@ math: katex
 
 > *すべてのモデルは間違っているが、いくつかのモデルは有用である。* — ジョージ・ボックス
 
-<div class="important">
+<div class="important ">
 
 あらゆる種類の問題に対して最適に機能する単一の最良モデルは存在しません
 
@@ -175,3 +175,33 @@ print(softmax(x))
 | A3 | B3 | description of A3 and B3  |
 | A4 | B4 | description of A4 and B4  |
 | A5 | B5 | description of A5 and B5  |
+
+---
+
+## Important Colors
+
+<div class="important">
+
+normal
+
+</div>
+
+<div class="important red">
+
+🚨 red
+
+</div>
+
+
+<div class="important warning">
+
+⚠️ warning
+
+</div>
+
+<div class="important success">
+
+✅ success
+
+</div>
+

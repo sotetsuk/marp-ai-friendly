@@ -152,12 +152,10 @@ blockquote strong {
 
 .success {
   color: var(--success);
-  font-weight: bold;
 }
 
 .warning {
   color: var(--warning);
-  font-weight: bold;
 }
 
 /* Lead Slide
