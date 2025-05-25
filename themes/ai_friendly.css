@@ -298,8 +298,8 @@ section ul, section ol {
    ========================================================================== */
 code {
   font-family: var(--font-code);
-  background-color: #49483e;
-  color: #f8f8f2;
+  background-color: #e3f2fd;
+  color: #1565c0;
   padding: 0.1em 0.3em;
   border-radius: 3px;
   vertical-align: top;
