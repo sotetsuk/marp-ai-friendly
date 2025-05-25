@@ -362,7 +362,7 @@ table {
   border-collapse: collapse;
   margin: var(--space-md) 0;
   font-size: 0.9em;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-sm);
   overflow: hidden;
 }
 
@@ -423,7 +423,7 @@ pre {
   background: #1e293b;
   color: #e2e8f0;
   padding: 0.5rem 1.0rem 0.8rem 1.0rem;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-sm);
   overflow-x: auto;
   font-family: var(--font-code);
   line-height: 1.4;
