@@ -143,3 +143,17 @@ $$
 - 各領域内の平均値を出力
 - 全体的な特徴を捉える傾向
 
+
+---
+
+## コードブロックの例
+
+```python
+import numpy as np
+
+def softmax(x):
+    return np.exp(x) / np.sum(np.exp(x), axis=0)
+
+x = np.array([1, 2, 3])
+print(softmax(x))
+```
