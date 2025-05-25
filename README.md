@@ -14,7 +14,7 @@
 ```json:.vscode/settings.json
 {
     "markdown.marp.themes": [
-      "https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/tags/v1/themes/ai_friendly.css",
+      "https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/tags/v2/themes/ai_friendly.css",
     ]
 }
 ```
