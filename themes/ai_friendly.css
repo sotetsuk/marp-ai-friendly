@@ -300,8 +300,12 @@ code {
   font-family: var(--font-code);
   background-color: #49483e;
   color: #f8f8f2;
-  padding: 2px 4px;
+  padding: 0.1em 0.3em;
   border-radius: 3px;
+  vertical-align: top;
+  display: inline-block;
+  position: relative;
+  top: 0.2em;
 }
 
 pre {
