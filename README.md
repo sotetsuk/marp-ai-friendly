@@ -7,7 +7,7 @@
 
 ## Usage 
 
-1. add `.vscode/settings.json `
+1. add `.vscode/settings.json ` with the following content:
 2. install marp VSCode extension.
 3. open markdown file with VSCode.
 
