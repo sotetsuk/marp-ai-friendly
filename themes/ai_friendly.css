@@ -349,10 +349,24 @@ img[alt~="right"] {
   color: var(--warning);
 }
 
-/* List adjustments */
+/* Enhanced Lists */
 section ul, section ol {
   margin-top: 0.3rem;
   margin-bottom: 0.3rem;
+}
+
+section li {
+  line-height: 1.6;
+}
+
+section ul li::marker {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+section ol li::marker {
+  color: var(--primary);
+  font-weight: 600;
 }
 
 /* Tables
