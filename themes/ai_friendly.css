@@ -311,7 +311,7 @@ code {
 pre {
   background-color: #272822;
   color: #f8f8f2;
-  padding: 1rem;
+  padding: 0.5rem 1.0rem 0.8rem 1.0rem;
   border-radius: 6px;
   overflow-x: auto;
   font-family: var(--font-code);
