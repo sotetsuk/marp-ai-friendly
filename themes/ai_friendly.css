@@ -71,7 +71,7 @@
 section {
   font-family: var(--font-base);
   font-weight: 400;
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   line-height: 1.7;
   background-image: none;
   padding: 4rem 3rem 3rem;
@@ -103,7 +103,7 @@ section::after {
 h1 {
   font-family: var(--font-base);
   font-weight: 700;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   line-height: 1.2;
   color: var(--primary);
   text-align: center;
@@ -151,7 +151,7 @@ h2 + .figure-wrapper + h3 {
 h3 {
   font-family: var(--font-base);
   font-weight: 600;
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   line-height: 1.4;
   color: var(--primary);
   margin: 1.25rem 0 0.75rem 0;
@@ -181,7 +181,7 @@ h3 strong {
    ========================================================================== */
 blockquote {
   font-family: var(--font-base);
-  font-size: 1.875rem;
+  font-size: 1.75rem;
   line-height: 1.6;
   font-style: normal;
   background: var(--primary-light);
@@ -223,7 +223,7 @@ blockquote .katex-display:last-child {
 .author {
   font-family: var(--font-base);
   font-weight: 400;
-  font-size: 1.875rem;
+  font-size: 1.75rem;
   line-height: 1.5;
   color: var(--text-secondary);
   text-align: center;
@@ -337,7 +337,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: var(--space-xl) 0;
-  font-size: 1.6875rem;
+  font-size: 1.5rem;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-md);
@@ -347,7 +347,7 @@ table th {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%) !important;
   color: var(--text-inverse) !important;
   font-weight: 600;
-  font-size: 1.6875rem;
+  font-size: 1.5rem;
   padding: var(--space-md) var(--space-lg);
   text-align: left;
   border: none;
@@ -396,7 +396,7 @@ pre {
   border-radius: var(--radius-lg);
   overflow-x: auto;
   font-family: var(--font-code);
-  font-size: 1.6875rem;
+  font-size: 1.375rem;
   line-height: 1.6;
   margin: var(--space-xl) 0;
   box-shadow: var(--shadow-lg);
@@ -514,7 +514,7 @@ pre code {
 }
 
 .figure-wrapper p {
-  font-size: 1.3125rem;
+  font-size: 1.125rem;
   font-weight: 500;
   color: var(--text-secondary);
   margin: var(--space-md) 0 0 0;
@@ -535,7 +535,7 @@ pre code {
 
 .figure-wrapper.withtext p {
   margin-top: var(--space-sm);
-  font-size: 1.2rem;
+  font-size: 1.125rem;
 }
 
 /* Image Alt Attribute Styling */
@@ -565,7 +565,7 @@ img[alt~="right"] {
    ========================================================================== */
 .footnote {
   font-family: var(--font-base);
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   font-weight: 400;
   color: var(--text-muted);
   line-height: 1.5;
@@ -594,24 +594,7 @@ img[alt~="right"] {
 /* Responsive Adjustments for Different Screen Sizes
    ========================================================================== */
 @media (max-width: 1024px) {
-  section {
-    padding: 3rem 2rem 2rem;
-    font-size: 1.875rem;
-  }
-  
-  h1 {
-    font-size: 3.75rem;
-  }
-  
-  h2 {
-    font-size: 1.875rem;
-    padding: 0.875rem 1.5rem;
-  }
-  
-  h3 {
-    font-size: 1.875rem;
-  }
-  
+  /* Removed font-size adjustments to maintain consistent layout in Marp slides */
   .figure-wrapper.right {
     max-width: 50%;
     margin-left: var(--space-lg);
