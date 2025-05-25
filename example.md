@@ -159,3 +159,19 @@ print(softmax(x))
 ```
 
 インラインコードブロック `code` は背景が薄い青にになります
+
+---
+
+
+## テーブルの例
+
+> **Table** の例です
+
+
+| 列1 | 列2 | 列3 |
+|:-----:|:-----:|:-----:|
+| A1 | B1 | description of A1 and B1 |
+| A2 | B2 | description of A2 and B2  |
+| A3 | B3 | description of A3 and B3  |
+| A4 | B4 | description of A4 and B4  |
+| A5 | B5 | description of A5 and B5  |

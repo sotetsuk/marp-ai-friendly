@@ -294,6 +294,44 @@ section ul, section ol {
   margin-bottom: 0.3rem;
 }
 
+/* Tables
+   ========================================================================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-md) 0;
+  font-size: 0.9em;
+}
+
+table th {
+  background-color: var(--primary) !important;
+  color: var(--background) !important;
+  font-weight: 700;
+  padding: var(--space-xs) var(--space-sm);
+  text-align: left;
+  border: 1px solid var(--primary);
+}
+
+table td {
+  padding: var(--space-xs) var(--space-sm);
+  border: 1px solid #ddd;
+  background-color: var(--background);
+}
+
+table tr:nth-child(even) td {
+  background-color: var(--gray);
+}
+
+table tr:hover td {
+  background-color: var(--primary-light);
+}
+
+/* Ensure th styles override any inherited styles */
+section table th {
+  background-color: var(--primary) !important;
+  color: var(--background) !important;
+}
+
 /* Code Blocks - Monokai Theme
    ========================================================================== */
 code {
