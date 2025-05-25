@@ -138,6 +138,11 @@ h2 strong {
   font-weight: 700;
 }
 
+/* Ensure proper spacing after h2 */
+h2 + * {
+  margin-top: 2rem !important;
+}
+
 /* Subsection Headers (h3) */
 h3 {
   font-family: var(--font-base);
@@ -145,8 +150,8 @@ h3 {
   font-size: 2.25rem;
   line-height: 1.4;
   color: var(--primary);
-  margin: 2rem 0 1rem 0;
-  padding: 0.75rem 0 0.75rem 1.5rem;
+  margin: 1.25rem 0 0.75rem 0;
+  padding: 0.5rem 0 0.5rem 1.5rem;
   border-left: 6px solid var(--primary);
   position: relative;
   transition: all var(--transition-normal);
