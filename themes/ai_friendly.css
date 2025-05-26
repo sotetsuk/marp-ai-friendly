@@ -354,6 +354,11 @@ section ul, section ol {
   margin-bottom: 0.3rem;
 }
 
+section ul {
+  margin-left: 0;
+  padding-left: 0.9rem;
+}
+
 section ul li::marker {
   color: var(--primary);
   font-weight: 600;
