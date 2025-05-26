@@ -354,10 +354,6 @@ section ul, section ol {
   margin-bottom: 0.3rem;
 }
 
-section li {
-  line-height: 1.6;
-}
-
 section ul li::marker {
   color: var(--primary);
   font-weight: 600;
@@ -426,10 +422,6 @@ code {
   color: var(--primary-dark);
   padding: 0.1em 0.3em;
   border-radius: 3px;
-  vertical-align: top;
-  display: inline-block;
-  position: relative;
-  top: 0.2em;
 }
 
 pre {
@@ -439,7 +431,6 @@ pre {
   border-radius: var(--radius-sm);
   overflow-x: auto;
   font-family: var(--font-code);
-  line-height: 1.4;
   margin: 1rem 0;
   box-shadow: var(--shadow-lg);
   border: 1px solid var(--border-medium);
