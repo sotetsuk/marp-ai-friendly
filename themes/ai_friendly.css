@@ -437,7 +437,7 @@ pre {
   overflow-x: auto;
   font-family: var(--font-code);
   margin: 1rem 0;
-  box-shadow: var(--shadow-lg);
+  box-shadow: none;
   border: 1px solid var(--border-medium);
 }
 
