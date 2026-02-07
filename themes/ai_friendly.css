@@ -642,25 +642,10 @@ section.section-header h2 {
   padding: 0.5rem 1rem;
 }
 
-/* 6. compare — Comparison layout
-   ========================================================================== */
-section.compare {
-  columns: 2;
-  column-gap: 2rem;
-  column-rule: 2px solid var(--border-light);
-}
-section.compare > h2 {
-  column-span: all;
-}
-section.compare h3:nth-of-type(n+2) {
-  break-before: column;
-}
-
 /* Figure captions in multi-column layout templates
    ========================================================================== */
 section.cols p:has(img),
-section.cols-3 p:has(img),
-section.compare p:has(img) {
+section.cols-3 p:has(img) {
   font-size: 0.5em;
   color: var(--text-secondary);
   text-align: center;
