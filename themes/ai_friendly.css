@@ -374,24 +374,22 @@ section ol li::marker {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: var(--space-md) 0;
+  margin: var(--space-sm) 0;
   font-size: 0.9em;
-  border-radius: var(--radius-sm);
-  overflow: hidden;
 }
 
 table th {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%) !important;
-  color: var(--text-inverse) !important;
-  font-weight: 600;
-  padding: var(--space-xs) var(--space-sm);
+  background: transparent !important;
+  color: var(--primary) !important;
+  font-weight: 700;
+  padding: 0.25rem var(--space-sm);
   text-align: left;
   border: none;
-  letter-spacing: 0.025em;
+  border-bottom: 3px solid var(--primary);
 }
 
 table td {
-  padding: var(--space-xs) var(--space-sm);
+  padding: 0.25rem var(--space-sm);
   border: none;
   background-color: var(--background);
   transition: background-color var(--transition-fast);
@@ -411,12 +409,6 @@ table tbody tr:not(:last-child) td {
 
 table tr:hover td {
   background-color: var(--primary-light);
-}
-
-/* Ensure th styles override any inherited styles */
-section table th {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%) !important;
-  color: var(--text-inverse) !important;
 }
 
 /* Code Blocks - Monokai Theme
