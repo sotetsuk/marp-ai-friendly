@@ -695,23 +695,22 @@ section.steps ol {
 /* 9. stats — KPI/metrics display
    ========================================================================== */
 section.stats {
-  columns: 3;
-  column-gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-auto-flow: column;
+  align-content: center;
+  align-items: end;
   text-align: center;
+  gap: 0 2rem;
 }
-section.stats > h2 {
-  column-span: all;
-  text-align: left;
-}
+section.stats > h2 { text-align: left; }
 section.stats h3 {
   border-left: none;
   font-size: 2.5em;
   color: var(--primary);
   margin-bottom: 0.2em;
   padding-left: 0;
-}
-section.stats h3:nth-of-type(n+2) {
-  break-before: column;
 }
 section.stats p {
   color: var(--text-secondary);
