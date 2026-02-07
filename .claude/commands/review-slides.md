@@ -20,10 +20,22 @@ Otherwise, proceed with the following steps:
 Run the following command using the Bash tool:
 
 ```
-npx @marp-team/marp-cli $ARGUMENTS --theme-set themes/ai_friendly.css --images png --image-scale 2 --output dist/ --allow-local-files
+npx @marp-team/marp-cli $ARGUMENTS --theme-set themes/ai_friendly.css --images png --image-scale 2 -o dist/slide.png --allow-local-files
 ```
 
 If the command fails, display the error output and stop.
+
+### Step 2.5: Resize images for API compatibility
+
+The API has a 2000px max dimension limit for multi-image requests. Resize all exported PNGs so the longest edge is at most 1600px (leaving margin) while preserving aspect ratio.
+
+Use the Glob tool to find all `.png` files in `dist/`, then run the following for each image using the Bash tool:
+
+```
+sips -Z 1600 <image_path>
+```
+
+Run all resize commands in parallel for efficiency.
 
 ### Step 3: Load all exported PNG images
 
