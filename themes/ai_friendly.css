@@ -379,28 +379,24 @@ table {
 }
 
 table th {
-  background: transparent !important;
+  background: var(--primary-light) !important;
   color: var(--primary) !important;
   font-weight: 700;
-  padding: 0.25rem var(--space-sm);
+  padding: 0.3rem var(--space-sm);
   text-align: left;
   border: none;
-  border-bottom: 3px solid var(--primary);
+  border-bottom: none;
 }
 
 table td {
-  padding: 0.25rem var(--space-sm);
+  padding: 0.3rem var(--space-sm);
   border: none;
-  background-color: var(--background);
-  transition: background-color var(--transition-fast);
+  background-color: var(--background) !important;
 }
 
-table tbody tr:nth-child(odd) td {
-  background-color: var(--background);
-}
-
+table tbody tr:nth-child(odd) td,
 table tbody tr:nth-child(even) td {
-  background-color: var(--surface);
+  background-color: var(--background) !important;
 }
 
 table tbody tr:not(:last-child) td {
@@ -408,7 +404,7 @@ table tbody tr:not(:last-child) td {
 }
 
 table tr:hover td {
-  background-color: var(--primary-light);
+  background-color: rgba(0, 0, 0, 0.02);
 }
 
 /* Code Blocks - Monokai Theme
