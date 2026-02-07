@@ -553,8 +553,12 @@ section.img-right > p:has(img) {
   grid-column: 2;
   grid-row: 1 / span 20;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: 0.5em;
+  color: var(--text-secondary);
+  text-align: center;
 }
 section.img-right > p:has(img) img {
   max-width: 100%;
@@ -575,8 +579,12 @@ section.img-left > p:has(img) {
   grid-column: 1;
   grid-row: 1 / span 20;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: 0.5em;
+  color: var(--text-secondary);
+  text-align: center;
 }
 section.img-left > p:has(img) img {
   max-width: 100%;
@@ -595,6 +603,10 @@ section.cols > h2 {
 section.cols h3:nth-of-type(n+2) {
   break-before: column;
 }
+section.cols img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* 4. cols-3 — 3-column layout
    ========================================================================== */
@@ -607,6 +619,10 @@ section.cols-3 > h2 {
 }
 section.cols-3 h3:nth-of-type(n+2) {
   break-before: column;
+}
+section.cols-3 img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* 5. section-header — Section divider slide
@@ -638,6 +654,16 @@ section.compare > h2 {
 }
 section.compare h3:nth-of-type(n+2) {
   break-before: column;
+}
+
+/* Figure captions in multi-column layout templates
+   ========================================================================== */
+section.cols p:has(img),
+section.cols-3 p:has(img),
+section.compare p:has(img) {
+  font-size: 0.5em;
+  color: var(--text-secondary);
+  text-align: center;
 }
 
 /* 8. steps — Process/step display
