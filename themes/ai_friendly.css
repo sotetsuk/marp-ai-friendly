@@ -669,27 +669,29 @@ section.compare p:has(img) {
 /* 8. steps — Process/step display
    ========================================================================== */
 section.steps {
-  columns: 3;
-  column-gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-auto-flow: column;
+  align-content: center;
+  gap: 0.5rem 1rem;
 }
-section.steps > h2 {
-  column-span: all;
-}
+section.steps > h2 { text-align: left; }
 section.steps h3 {
   border-left: none;
   background: var(--primary);
   color: white;
   text-align: center;
-  border-radius: var(--radius-md);
-  padding: 0.4rem;
-}
-section.steps h3:nth-of-type(n+2) {
-  break-before: column;
+  border-radius: 0;
+  margin: 0;
+  padding: 0.5rem 1.5rem 0.5rem 1rem;
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
 }
 section.steps p,
 section.steps ul,
 section.steps ol {
   font-size: 0.9em;
+  margin-top: 0;
 }
 
 /* 9. stats — KPI/metrics display
