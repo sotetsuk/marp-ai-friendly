@@ -94,20 +94,32 @@ $$
 
 ---
 
-## 画像配置の例 `center`
-
-<div class="figure-wrapper center">
+<!-- _class: img-center -->
+## `img-center` テンプレート
 
 ![](images/ef6ff5b23265f052edd37ac235bd4e703501e287f92bbdf2ef48b995682b37cf.jpg)
 
 **図14.31**: マルチタスク密予測問題の図解。[EF15]の図1より。Rob Fergus氏の許可を得て使用。
 
+---
+
+<!-- _class: img-center -->
+## `img-center` テンプレート — シングルメッセージ付き
+
+<div class="important center">
+
+**マルチタスク密予測問題の全体像を示す**
+
 </div>
 
+![](images/ef6ff5b23265f052edd37ac235bd4e703501e287f92bbdf2ef48b995682b37cf.jpg)
+
+**図14.31**: マルチタスク密予測問題の図解
 
 ---
 
-## 画像配置の例（ テキストががある `center` の場合 `withtext` ）
+<!-- _class: img-center withtext -->
+## `img-center withtext` テンプレート
 
 > <span class="b">分類問題</span>: 出力空間はクラスの集合 $\mathcal{Y}=\{1,2,...,C\}$
 
@@ -115,25 +127,14 @@ $$
 - 二項分類: $C = 2$、$y \in \{0,1\}$ または $\{-1,+1\}$
 - 多クラス分類: $C > 2$
 
-<div class="figure-wrapper center withtext">
-
 ![h:180px](images/52978b96dd928aff6ed0bef9aed961083a8e376e2e72369c194abdbd7cbad9c3.jpg)
 
 **図1.2**: アヤメの花の3種類（Setosa、Versicolor、Virginica）
 
-</div>
-
 ---
 
-## 画像配置の例 `right`
-
-<div class="figure-wrapper right">
-  
-![](images/e2f7bfb8494f1360766f6b803d0cd97df2911e55080181be35c1a1e1c4c2bfd9.jpg)
-  
-**図14.12**: $2\times2$ フィルターとストライド1を使用したマックスプーリングの図解
-
-</div>
+<!-- _class: img-right -->
+## `img-right` テンプレート — 旧 `figure-wrapper right`
 
 ### マックスプーリング
 - 各領域内の最大値を出力
@@ -142,6 +143,9 @@ $$
 ### 平均プーリング
 - 各領域内の平均値を出力
 - 全体的な特徴を捉える傾向
+
+![](images/e2f7bfb8494f1360766f6b803d0cd97df2911e55080181be35c1a1e1c4c2bfd9.jpg)
+**図14.12**: マックスプーリングの図解
 
 
 ---

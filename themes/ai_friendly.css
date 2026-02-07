@@ -591,7 +591,59 @@ section.img-left > p:has(img) img {
   max-height: 80%;
 }
 
-/* 3. cols — 2-column layout
+/* 3. img-center — Centered image layout
+   ========================================================================== */
+section.img-center {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+section.img-center > p:has(img) {
+  margin-top: auto;
+  align-self: center;
+}
+section.img-center > p:has(img) img {
+  max-height: 65vh;
+  max-width: 100%;
+}
+section.img-center > p:has(img) + p {
+  flex: 0 0 auto;
+  margin-bottom: auto;
+  font-size: 0.5em;
+  color: var(--text-secondary);
+  text-align: center;
+}
+section.img-center > p:not(:has(img)),
+section.img-center > blockquote,
+section.img-center > ul,
+section.img-center > ol {
+  flex: 0 0 auto;
+}
+
+/* img-center withtext modifier */
+section.img-center.withtext {
+  justify-content: start;
+  align-items: stretch;
+}
+section.img-center.withtext > p:has(img) {
+  flex: 0 0 auto;
+  align-self: center;
+}
+section.img-center.withtext > p:has(img) img {
+  max-height: 300px;
+}
+section.img-center.withtext > p:not(:has(img)),
+section.img-center.withtext > blockquote,
+section.img-center.withtext > ul,
+section.img-center.withtext > ol {
+  text-align: left;
+}
+section.img-center.withtext > p:has(img) + p {
+  text-align: center;
+}
+
+/* 4. cols — 2-column layout
    ========================================================================== */
 section.cols {
   columns: 2;
@@ -644,6 +696,7 @@ section.section-header h2 {
 
 /* Figure captions in multi-column layout templates
    ========================================================================== */
+section.img-center p:has(img),
 section.cols p:has(img),
 section.cols-3 p:has(img) {
   font-size: 0.5em;

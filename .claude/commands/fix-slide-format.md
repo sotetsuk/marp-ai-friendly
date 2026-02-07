@@ -88,7 +88,7 @@ Step 1 で特定した対象ページの行範囲に対して、Edit ツール�
    - Marp の画像サイズ構文: `![h:200px](image.png)` または `![w:400px](image.png)`
 
 3. **画像配置調整**:
-   - `figure-wrapper` の CSS クラス: `center`（中央配置）、`right`（右寄せ）、`center withtext`（テキストと共存する中央配置）
+   - `_class` レイアウトテンプレート: `img-center`（中央配置）、`img-right`（右寄せ）、`img-center withtext`（テキストと共存する中央配置）。旧スタイル: `figure-wrapper` の CSS クラス（`center`、`right`、`center withtext`）も利用可能
 
 4. **テーブル修正**:
    - セル内容の短縮
