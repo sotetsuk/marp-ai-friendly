@@ -35,6 +35,16 @@ html: $(OUTPUT_DIR)
 		--output $(HTML_OUTPUT) \
 		--allow-local-files
 
+# Export individual slide images as PNG
+.PHONY: images
+images: $(OUTPUT_DIR)
+	$(MARP_CLI) $(INPUT_FILE) \
+		--theme-set $(THEME_DIR)/ai_friendly.css \
+		--images png \
+		--image-scale 2 \
+		--output $(OUTPUT_DIR)/ \
+		--allow-local-files
+
 # Preview in browser
 .PHONY: preview
 preview:
@@ -60,6 +70,7 @@ help:
 	@echo "  make pdf      - Build PDF output"
 	@echo "  make html     - Build HTML output"
 	@echo "  make all      - Build both PDF and HTML"
+	@echo "  make images   - Export individual slide images as PNG"
 	@echo "  make preview  - Preview in browser"
 	@echo "  make clean    - Clean output directory"
 	@echo "  make install  - Install Marp CLI globally"
