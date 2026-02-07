@@ -626,32 +626,7 @@ section.section-header h2 {
   padding: 0.5rem 1rem;
 }
 
-/* 6. quote — Quote slide
-   ========================================================================== */
-section.quote {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-section.quote h2 {
-  position: static;
-  background: none;
-  color: var(--text-secondary);
-  font-size: 0.9em;
-  font-weight: 400;
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-section.quote blockquote {
-  font-size: 1.4em;
-  border-left: 6px solid var(--primary);
-  max-width: 80%;
-  text-align: left;
-  position: relative;
-}
-
-/* 7. compare — Comparison layout
+/* 6. compare — Comparison layout
    ========================================================================== */
 section.compare {
   columns: 2;
