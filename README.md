@@ -7,9 +7,25 @@
 
 ## Usage
 
-**Just copy a single markdown file to get started.** Each markdown file contains the theme version in its frontmatter and full setup instructions (theme download, VSCode configuration, and CLI build commands) in an HTML comment block.
+**Just copy a single markdown file to get started.** Each markdown file contains setup instructions in an HTML comment block. Ask your AI coding assistant (Claude Code, Cursor, GitHub Copilot, etc.) to read the markdown file — it will handle theme download, VSCode setup, and PDF/HTML builds.
 
-Ask your AI coding assistant (Claude Code, Cursor, GitHub Copilot, etc.) to read the markdown file — it will automatically handle theme download, VSCode setup, and PDF/HTML builds.
+### Theme versioning
+
+The theme version is specified via the `theme` property in the frontmatter:
+
+```yaml
+theme: ai_friendly      # latest (main branch)
+theme: ai_friendly_v4   # pinned to v4
+```
+
+When a version is pinned (e.g., `ai_friendly_v4`), the theme CSS is fetched from the corresponding git tag. The CSS at each tag registers itself as `ai_friendly_vN` via `/* @theme ai_friendly_vN */`, so multiple versions can coexist.
+
+### Release process
+
+1. Update `/* @theme ai_friendly */` → `/* @theme ai_friendly_vN */` in `themes/ai_friendly.css`
+2. Update `theme: ai_friendly` → `theme: ai_friendly_vN` in `example.md`
+3. Tag as `vN`
+4. Revert both changes on main
 
 ### GitHub Codespace
 
