@@ -9,7 +9,7 @@ math: katex
 GitHub repo   : https://github.com/sotetsuk/marp-ai-friendly
 VERSION       : ai_friendly → latest (main), ai_friendly_vN → pinned (tag vN)
 Setup (latest): curl -sL https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/heads/main/setup.sh | sh
-Setup (pinned): export VERSION=v8 && curl -sL https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/tags/${VERSION}/setup.sh | sh
+Setup (pinned): export VERSION=vN && curl -sL https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/tags/${VERSION}/setup.sh | sh
 Build (pdf)   : npx @marp-team/marp-cli slides.md --pdf -o output.pdf --no-stdin
 Build (html)  : npx @marp-team/marp-cli slides.md --html -o output.html --no-stdin
 -->
