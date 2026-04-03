@@ -14,8 +14,8 @@ theme: ai_friendly → latest (main), ai_friendly_vN → pinned (tag vN)
 curl -sL https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/heads/main/setup.sh | sh
 
 # Pinned (e.g., v8):
-export THEME=ai_friendly_v8 REF=refs/tags/v8
-curl -sL https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/${REF}/setup.sh | sh
+export VERSION=v8
+curl -sL https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/tags/${VERSION}/setup.sh | sh
 
 ## Build
 npx @marp-team/marp-cli slides.md --pdf -o output.pdf --no-stdin

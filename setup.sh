@@ -2,17 +2,14 @@
 set -eu
 
 # --- Defaults (latest / main) ---
-THEME="${THEME:-ai_friendly}"
-REF="${REF:-refs/heads/main}"
-
-# --- Parse args (override env) ---
-while [ $# -gt 0 ]; do
-  case "$1" in
-    --theme) THEME="$2"; shift 2;;
-    --ref)   REF="$2";   shift 2;;
-    *)       echo "Unknown option: $1" >&2; exit 1;;
-  esac
-done
+# Set VERSION (e.g., v8) to pin a specific release.
+if [ -n "${VERSION:-}" ]; then
+  THEME="ai_friendly_${VERSION}"
+  REF="refs/tags/${VERSION}"
+else
+  THEME="ai_friendly"
+  REF="refs/heads/main"
+fi
 
 BASE_URL="https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/${REF}"
 
