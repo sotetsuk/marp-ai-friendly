@@ -24,10 +24,10 @@ themeSet: [.marp-themes/]
 allowLocalFiles: true
 EOF
 
-# Merge into existing .vscode/settings.json if present
-mkdir -p .vscode && cat > .vscode/settings.json << EOF
-{"markdown.marp.themes": ["https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/${ref}/themes/ai_friendly.css"]}
-EOF
+# Add theme URL to .vscode/settings.json (safe to run for each version)
+URL=https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/${ref}/themes/ai_friendly.css
+mkdir -p .vscode && python3 -c "import json,os;p='.vscode/settings.json';s=json.load(open(p)) if os.path.exists(p) else {}
+t=s.setdefault('markdown.marp.themes',[]);u='$URL';u in t or t.append(u);json.dump(s,open(p,'w'),indent=2)"
 
 ## Build
 npx @marp-team/marp-cli slides.md --pdf -o output.pdf --no-stdin
