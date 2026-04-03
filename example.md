@@ -3,7 +3,36 @@ marp: true
 theme: ai_friendly
 paginate: true
 math: katex
+ai_friendly_version: v4
 ---
+
+<!--
+[AI-Friendly Theme]
+https://github.com/sotetsuk/marp-ai-friendly
+
+## Setup
+
+### Download theme
+mkdir -p /tmp/marp-themes && curl -sL -o /tmp/marp-themes/ai_friendly-${ai_friendly_version}.css \
+  https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/tags/${ai_friendly_version}/themes/ai_friendly.css
+
+### VSCode preview (.vscode/settings.json)
+{
+  "markdown.marp.themes": [
+    "https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/tags/${ai_friendly_version}/themes/ai_friendly.css"
+  ]
+}
+
+### CLI (PDF)
+npx @marp-team/marp-cli slides.md \
+  --theme-set /tmp/marp-themes/ai_friendly-${ai_friendly_version}.css \
+  --pdf -o output.pdf --allow-local-files --no-stdin
+
+### CLI (HTML)
+npx @marp-team/marp-cli slides.md \
+  --theme-set /tmp/marp-themes/ai_friendly-${ai_friendly_version}.css \
+  --html -o output.html --allow-local-files --no-stdin
+-->
 
 # AI Friendly Theme
 
