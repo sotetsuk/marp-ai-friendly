@@ -15,7 +15,7 @@ curl -sL https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/heads/
 
 # Pinned (e.g., v8):
 export THEME=ai_friendly_v8 REF=refs/tags/v8
-curl -sL https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/heads/main/setup.sh | sh
+curl -sL https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/${REF}/setup.sh | sh
 
 ## Build
 npx @marp-team/marp-cli slides.md --pdf -o output.pdf --no-stdin
