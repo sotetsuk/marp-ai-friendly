@@ -13,8 +13,8 @@ theme: ai_friendly → latest (main), ai_friendly_vN → pinned (tag vN)
 # Latest (main):
 curl -sL https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/heads/main/setup.sh | sh
 
-# Pinned (e.g., v7):
-export THEME=ai_friendly_v7 REF=refs/tags/v7
+# Pinned (e.g., v8):
+export THEME=ai_friendly_v8 REF=refs/tags/v8
 curl -sL https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/heads/main/setup.sh | sh
 
 ## Build
