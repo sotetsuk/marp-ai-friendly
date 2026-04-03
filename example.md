@@ -10,22 +10,11 @@ math: katex
 theme: ai_friendly → latest (main), ai_friendly_vN → pinned (tag vN)
 
 ## Setup
-# When switching theme versions, re-run the corresponding setup commands below.
-# ${theme}: theme property value (ai_friendly or ai_friendly_vN)
-# ${ref}:   refs/heads/main (for ai_friendly) or refs/tags/vN (for ai_friendly_vN)
+# Latest (main):
+curl -sL https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/heads/main/setup.sh | sh
 
-mkdir -p themes && curl -sL -o themes/${theme}.css \
-  https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/${ref}/themes/ai_friendly.css
-
-cat > .marprc.yml << 'EOF'
-themeSet: [themes/]
-allowLocalFiles: true
-EOF
-
-# Add theme URL to .vscode/settings.json (safe to run for each version)
-URL=https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/${ref}/themes/ai_friendly.css
-mkdir -p .vscode && python3 -c "import json,os;p='.vscode/settings.json';s=json.load(open(p)) if os.path.exists(p) else {}
-t=s.setdefault('markdown.marp.themes',[]);u='$URL';u in t or t.append(u);json.dump(s,open(p,'w'),indent=2)"
+# Pinned (e.g., v7):
+curl -sL https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/tags/v7/setup.sh | THEME=ai_friendly_v7 REF=refs/tags/v7 sh
 
 ## Build
 npx @marp-team/marp-cli slides.md --pdf -o output.pdf --no-stdin
