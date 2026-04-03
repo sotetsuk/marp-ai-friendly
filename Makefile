@@ -36,13 +36,13 @@ html: $(OUTPUT_DIR)
 		--allow-local-files
 
 # Export individual slide images as PNG
-.PHONY: images
-images: $(OUTPUT_DIR)
+.PHONY: png
+png: $(OUTPUT_DIR)
 	$(MARP_CLI) $(INPUT_FILE) \
 		--theme-set $(THEME_DIR)/ai_friendly.css \
 		--images png \
 		--image-scale 2 \
-		--output $(OUTPUT_DIR)/ \
+		--output $(OUTPUT_DIR)/example.png \
 		--allow-local-files
 
 # Preview in browser
