@@ -14,13 +14,11 @@ theme: ai_friendly → latest (main), ai_friendly_vN → pinned (tag vN)
 # ${theme}: theme property value (ai_friendly or ai_friendly_vN)
 # ${ref}:   refs/heads/main (for ai_friendly) or refs/tags/vN (for ai_friendly_vN)
 
-mkdir -p .marp-themes && curl -sL -o .marp-themes/${theme}.css \
+mkdir -p themes && curl -sL -o themes/${theme}.css \
   https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/${ref}/themes/ai_friendly.css
-grep -qxF '.marp-themes/' .gitignore 2>/dev/null || echo '.marp-themes/' >> .gitignore
-grep -qxF '.marprc.yml' .gitignore 2>/dev/null || echo '.marprc.yml' >> .gitignore
 
 cat > .marprc.yml << 'EOF'
-themeSet: [.marp-themes/]
+themeSet: [themes/]
 allowLocalFiles: true
 EOF
 
