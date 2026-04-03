@@ -1,0 +1,44 @@
+name: Update example.pdf
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'example.pdf'
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Marp CLI
+        run: npm install -g @marp-team/marp-cli
+
+      - name: Install Chrome dependencies
+        run: npx playwright install --with-deps chromium
+
+      - name: Build PDF
+        run: make pdf
+
+      - name: Copy PDF to root
+        run: cp dist/example.pdf example.pdf
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add example.pdf
+          if git diff --cached --quiet; then
+            echo "No changes to example.pdf"
+          else
+            git commit -m "Update example.pdf"
+            git push
+          fi
