@@ -5,21 +5,15 @@
 * Contents and images in `example.md` are from [Murphy's ML book](https://probml.github.io/pml-book/book1.html)
 
 
-## Usage 
+## Usage
 
-1. add `.vscode/settings.json ` with the following content:
-2. install marp VSCode extension.
-3. open markdown file with VSCode.
+**Just copy a single markdown file to get started.** Each markdown file contains the theme version in its frontmatter and full setup instructions (theme download, VSCode configuration, and CLI build commands) in an HTML comment block.
 
-```json:.vscode/settings.json
-{
-    "markdown.marp.themes": [
-      "https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/tags/v4/themes/ai_friendly.css",
-    ]
-}
-```
+Ask your AI coding assistant (Claude Code, Cursor, GitHub Copilot, etc.) to read the markdown file — it will automatically handle theme download, VSCode setup, and PDF/HTML builds.
 
-or clone this repo and open with GitHub codespace:
+### GitHub Codespace
+
+You can also clone this repo and open with GitHub Codespace:
 
 ![](images/screenshot.png)
 
