@@ -9,6 +9,8 @@
 
 **Just copy a single markdown file to get started.** Each markdown file contains setup instructions in an HTML comment block. Ask your AI coding assistant (Claude Code, Cursor, GitHub Copilot, etc.) to read the markdown file — it will handle theme download, VSCode setup, and PDF/HTML builds.
 
+> Prompt example: `Read slide.md and run the setup commands in the HTML comment block.`
+
 ### Theme versioning
 
 The theme version is specified via the `theme` property in the frontmatter:
