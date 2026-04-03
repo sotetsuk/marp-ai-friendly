@@ -10,26 +10,24 @@ math: katex
 theme: ai_friendly → latest (main), ai_friendly_vN → pinned (tag vN)
 
 ## Setup
+# When switching theme versions, re-run the corresponding setup commands below.
+# ${theme}: theme property value (ai_friendly or ai_friendly_vN)
+# ${ref}:   refs/heads/main (for ai_friendly) or refs/tags/vN (for ai_friendly_vN)
 
-### CLI
-# ${theme}=theme property value, ${version}=version suffix (or "main" if no suffix)
-# Use refs/heads/main instead of refs/tags/${version} for ai_friendly (no suffix)
 mkdir -p .marp-themes && curl -sL -o .marp-themes/${theme}.css \
-  https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/tags/${version}/themes/ai_friendly.css
+  https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/${ref}/themes/ai_friendly.css
 grep -qxF '.marp-themes/' .gitignore 2>/dev/null || echo '.marp-themes/' >> .gitignore
+grep -qxF '.marprc.yml' .gitignore 2>/dev/null || echo '.marprc.yml' >> .gitignore
 
 cat > .marprc.yml << 'EOF'
 themeSet: [.marp-themes/]
 allowLocalFiles: true
 EOF
 
-### VSCode — merge into existing .vscode/settings.json if present
-mkdir -p .vscode && echo '{"markdown.marp.themes":[' \
-  $(git ls-remote --tags https://github.com/sotetsuk/marp-ai-friendly.git 2>/dev/null \
-  | grep -o 'refs/tags/v[0-9]*$' | sed 's|refs/tags/||' | sort -V | awk '$0>="v6"' \
-  | while read v; do echo "\"https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/tags/$v/themes/ai_friendly.css\","; done) \
-  '"https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/heads/main/themes/ai_friendly.css"]}' \
-  | python3 -m json.tool > .vscode/settings.json
+# Merge into existing .vscode/settings.json if present
+mkdir -p .vscode && cat > .vscode/settings.json << EOF
+{"markdown.marp.themes": ["https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/${ref}/themes/ai_friendly.css"]}
+EOF
 
 ## Build
 npx @marp-team/marp-cli slides.md --pdf -o output.pdf --no-stdin
