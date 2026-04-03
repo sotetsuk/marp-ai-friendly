@@ -24,10 +24,9 @@ When a version is pinned (e.g., `ai_friendly_v4`), the theme CSS is fetched from
 
 ### Release process
 
-1. Update `/* @theme ai_friendly */` → `/* @theme ai_friendly_vN */` in `themes/ai_friendly.css`
-2. Update `theme: ai_friendly` → `theme: ai_friendly_vN` in `example.md`
-3. Tag as `vN`
-4. Revert both changes on main
+Run the Release workflow from GitHub Actions (or `gh workflow run release.yml -f version=vN`). The workflow automatically updates theme names in CSS/example.md, commits, tags, and creates a GitHub Release.
+
+With Claude Code, you can also use the `/release` slash command.
 
 ### GitHub Codespace
 
