@@ -45,3 +45,12 @@ jobs:
       - name: Push tag
         run: |
           git push origin "refs/tags/${{ inputs.version }}"
+
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "${{ inputs.version }}" \
+            --title "${{ inputs.version }}" \
+            --notes "Use \`theme: ai_friendly_${{ inputs.version }}\` to pin this version." \
+            --latest
