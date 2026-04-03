@@ -3,35 +3,37 @@ marp: true
 theme: ai_friendly
 paginate: true
 math: katex
-ai_friendly_version: v4
 ---
 
 <!--
-[AI-Friendly Theme]
-https://github.com/sotetsuk/marp-ai-friendly
+[AI-Friendly Theme] https://github.com/sotetsuk/marp-ai-friendly
+theme: ai_friendly → latest (main), ai_friendly_vN → pinned (tag vN)
 
 ## Setup
 
-### Download theme
-mkdir -p /tmp/marp-themes && curl -sL -o /tmp/marp-themes/ai_friendly-${ai_friendly_version}.css \
-  https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/tags/${ai_friendly_version}/themes/ai_friendly.css
+### CLI
+# ${theme}=theme property value, ${version}=version suffix (or "main" if no suffix)
+# Use refs/heads/main instead of refs/tags/${version} for ai_friendly (no suffix)
+mkdir -p .marp-themes && curl -sL -o .marp-themes/${theme}.css \
+  https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/tags/${version}/themes/ai_friendly.css
+grep -qxF '.marp-themes/' .gitignore 2>/dev/null || echo '.marp-themes/' >> .gitignore
 
-### VSCode preview (.vscode/settings.json)
-{
-  "markdown.marp.themes": [
-    "https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/tags/${ai_friendly_version}/themes/ai_friendly.css"
-  ]
-}
+cat > .marprc.yml << 'EOF'
+themeSet: [.marp-themes/]
+allowLocalFiles: true
+EOF
 
-### CLI (PDF)
-npx @marp-team/marp-cli slides.md \
-  --theme-set /tmp/marp-themes/ai_friendly-${ai_friendly_version}.css \
-  --pdf -o output.pdf --allow-local-files --no-stdin
+### VSCode — merge into existing .vscode/settings.json if present
+mkdir -p .vscode && echo '{"markdown.marp.themes":[' \
+  $(git ls-remote --tags https://github.com/sotetsuk/marp-ai-friendly.git 2>/dev/null \
+  | grep -o 'refs/tags/v[0-9]*$' | sed 's|refs/tags/||' | sort -V | awk '$0>="v6"' \
+  | while read v; do echo "\"https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/tags/$v/themes/ai_friendly.css\","; done) \
+  '"https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/heads/main/themes/ai_friendly.css"]}' \
+  | python3 -m json.tool > .vscode/settings.json
 
-### CLI (HTML)
-npx @marp-team/marp-cli slides.md \
-  --theme-set /tmp/marp-themes/ai_friendly-${ai_friendly_version}.css \
-  --html -o output.html --allow-local-files --no-stdin
+## Build
+npx @marp-team/marp-cli slides.md --pdf -o output.pdf --no-stdin
+npx @marp-team/marp-cli slides.md --html -o output.html --no-stdin
 -->
 
 # AI Friendly Theme
