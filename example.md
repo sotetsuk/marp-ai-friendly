@@ -103,15 +103,10 @@ $$
 
 ---
 
-## 画像配置の例 `center`
-
-<div class="figure-wrapper center">
+## 画像配置の例（デフォルト）
 
 ![](images/ef6ff5b23265f052edd37ac235bd4e703501e287f92bbdf2ef48b995682b37cf.jpg)
-
-**図14.31**: マルチタスク密予測問題の図解。[EF15]の図1より。Rob Fergus氏の許可を得て使用。
-
-</div>
+<small>**図14.31**: マルチタスク密予測問題の図解。[EF15]の図1より。Rob Fergus氏の許可を得て使用。</small>
 
 
 ---
