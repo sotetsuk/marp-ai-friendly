@@ -191,28 +191,39 @@ h1 {
 
 /* Image Handling
    ==========================================================================
-   Plain markdown ![]() is auto-centered with even vertical spacing.
-   Works whether headings/text appear above, below, both, or neither.
-   Sizing is deferred to Marp's ![w:… h:…]() hints. */
+   Plain markdown ![]() flows in normal block layout so surrounding
+   elements keep their positions when an image is added. On slides
+   whose only flow content is image paragraph(s) — i.e. the image is
+   both the first-of-type and last-of-type p, and there are no other
+   flow-content siblings — the section promotes to flex so the image
+   fills the available space and centers vertically. Sizing is deferred
+   to Marp's ![w:… h:…]() size hints. */
 
-section:has(> p > img:only-child) {
+section > p:has(> img:only-child) {
+  text-align: center;
+  margin: 1em 0;
+}
+
+section > p > img:only-child {
+  max-width: 100%;
+}
+
+/* Image-only slide. (:has() cannot be nested per spec, so the
+   "every p is an image-p" check is expressed as "first-of-type AND
+   last-of-type p contains the image", plus an allowlist-free
+   exclusion of other flow elements.) */
+section:has(> p:first-of-type > img:only-child):has(> p:last-of-type > img:only-child):not(:has(> pre, > ul, > ol, > blockquote, > table, > h3, > h4, > h5, > h6, > div)) {
   display: flex;
   flex-direction: column;
 }
 
-section > p:has(> img:only-child) {
+section:has(> p:first-of-type > img:only-child):has(> p:last-of-type > img:only-child):not(:has(> pre, > ul, > ol, > blockquote, > table, > h3, > h4, > h5, > h6, > div)) > p:has(> img:only-child) {
   flex: 1 1 0;
   min-height: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
-}
-
-section > p > img:only-child {
-  display: block;
-  max-width: 100%;
-  margin-inline: auto;
 }
 
 /* Footnote
