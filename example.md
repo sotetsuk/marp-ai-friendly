@@ -14,7 +14,9 @@ Build (pdf)   : npx @marp-team/marp-cli slide.md --pdf -o output.pdf --no-stdin
 Build (html)  : npx @marp-team/marp-cli slide.md --html -o output.html --no-stdin
 -->
 
-# AI Friendly Theme
+# AI Friendly Theme<br>(Long Title Example)
+
+<div class="subtitle">A subtitle for the lead slide</div>
 
 <div class="author">Your Name (2025/01/01)</div>
 
