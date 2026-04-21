@@ -105,55 +105,14 @@ $$
 
 ---
 
-## 画像配置の例 `center`
+## 画像配置の例
 
-<div class="figure-wrapper center">
+### 標準の markdown 画像は自動で上下中央に配置されます
 
 ![](images/ef6ff5b23265f052edd37ac235bd4e703501e287f92bbdf2ef48b995682b37cf.jpg)
 
-**図14.31**: マルチタスク密予測問題の図解。[EF15]の図1より。Rob Fergus氏の許可を得て使用。
-
-</div>
-
-
----
-
-## 画像配置の例（ テキストががある `center` の場合 `withtext` ）
-
-> <span class="b">分類問題</span>: 出力空間はクラスの集合 $\mathcal{Y}=\{1,2,...,C\}$
-
-- クラス = 順序付けられていない相互排他的なラベル
-- 二項分類: $C = 2$、$y \in \{0,1\}$ または $\{-1,+1\}$
-- 多クラス分類: $C > 2$
-
-<div class="figure-wrapper center withtext">
-
-![h:180px](images/52978b96dd928aff6ed0bef9aed961083a8e376e2e72369c194abdbd7cbad9c3.jpg)
-
-**図1.2**: アヤメの花の3種類（Setosa、Versicolor、Virginica）
-
-</div>
-
----
-
-## 画像配置の例 `right`
-
-<div class="figure-wrapper right">
-  
-![](images/e2f7bfb8494f1360766f6b803d0cd97df2911e55080181be35c1a1e1c4c2bfd9.jpg)
-  
-**図14.12**: $2\times2$ フィルターとストライド1を使用したマックスプーリングの図解
-
-</div>
-
-### マックスプーリング
-- 各領域内の最大値を出力
-- エッジや特徴の存在を強調
-
-### 平均プーリング
-- 各領域内の平均値を出力
-- 全体的な特徴を捉える傾向
-
+- 上にテキストや h3 があっても
+- 下にテキストがあっても、画像は残りのスペースの中央に来ます
 
 ---
 
