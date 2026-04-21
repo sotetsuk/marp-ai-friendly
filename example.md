@@ -157,6 +157,25 @@ $$
 
 ---
 
+## 画像配置の例 `centered-figure`（上下にテキスト）
+
+<div class="centered-figure">
+
+> <span class="b">前提</span>: 入力は正規化された画像テンソル
+
+- 典型的な前処理: リサイズ → 正規化 → テンソル化
+
+![](images/52978b96dd928aff6ed0bef9aed961083a8e376e2e72369c194abdbd7cbad9c3.jpg)
+
+**図**: 入力画像の例（3クラス分類タスク）
+
+- 出力は各クラスの確率分布
+- 推論時は `argmax` でクラスを決定
+
+</div>
+
+---
+
 ## コードブロックの例
 
 ```python
