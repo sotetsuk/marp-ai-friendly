@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: ai_friendly
+theme: ai_friendly_v9
 paginate: true
 math: katex
 ---
