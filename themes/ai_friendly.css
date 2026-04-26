@@ -1,4 +1,7 @@
-/* @theme ai_friendly */
+/*
+ * @theme ai_friendly
+ * @auto-scaling fittingHeader,math
+ */
 
 @import 'gaia';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
@@ -434,6 +437,8 @@ pre {
   border-radius: var(--radius-sm);
   overflow-x: auto;
   font-family: var(--font-code);
+  font-size: var(--slide-pre-font-size, inherit);
+  tab-size: 4;
   margin: 1rem 0;
   box-shadow: none;
   border: 1px solid var(--border-medium);
