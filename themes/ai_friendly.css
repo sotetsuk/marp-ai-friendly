@@ -538,10 +538,9 @@ pre code {
 .callout {
   --callout-color: 8, 109, 221;
   --callout-icon: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497Z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
-  border-left: 4px solid rgb(var(--callout-color));
   background-color: rgba(var(--callout-color), 0.1);
   border-radius: var(--radius-md);
-  padding: 0.6em 0.9em;
+  padding: 0.75em 1em;
   margin: var(--space-md) 0;
   break-inside: avoid;
   page-break-inside: avoid;
