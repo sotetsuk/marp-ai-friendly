@@ -10,8 +10,8 @@ GitHub repo   : https://github.com/sotetsuk/marp-ai-friendly
 VERSION       : ai_friendly → latest (main), ai_friendly_vN → pinned (tag vN)
 Setup (latest): curl -sL https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/heads/main/setup.sh | sh
 Setup (pinned): export VERSION=vN && curl -sL https://raw.githubusercontent.com/sotetsuk/marp-ai-friendly/refs/tags/${VERSION}/setup.sh | sh
-Build (pdf)   : npx @marp-team/marp-cli slide.md --pdf -o output.pdf --no-stdin
-Build (html)  : npx @marp-team/marp-cli slide.md --html -o output.html --no-stdin
+Build (pdf)   : npx @marp-team/marp-cli slide.md --config-file marp.config.mjs --pdf -o output.pdf --no-stdin
+Build (html)  : npx @marp-team/marp-cli slide.md --config-file marp.config.mjs --html -o output.html --no-stdin
 -->
 
 # AI Friendly Theme<br>(Long Title Example)
@@ -215,4 +215,79 @@ normal
 ✅ success
 
 </div>
+
+---
+
+## Obsidian Callout: 基本タイプ
+
+> [!note] Note
+> 一般的なメモ。デフォルトのコールアウト。
+
+> [!tip] Tip
+> 役立つヒントや小技 (`hint`, `important` も同義)。
+
+> [!warning] Warning
+> 注意が必要な情報 (`caution`, `attention` も同義)。
+
+---
+
+## Obsidian Callout: 情報・成功系
+
+> [!abstract] Abstract
+> 要約・概要 (`summary`, `tldr` も同義)。
+
+> [!info] Info
+> 補足情報。
+
+> [!success] Success
+> 完了・成功を示す (`check`, `done` も同義)。
+
+---
+
+## Obsidian Callout: タスク・疑問・エラー系
+
+> [!todo] Todo
+> 未完了タスク。
+
+> [!question] Question
+> 質問・疑問点 (`help`, `faq` も同義)。
+
+> [!failure] Failure
+> 失敗・不足 (`fail`, `missing` も同義)。
+
+---
+
+## Obsidian Callout: 警告・バグ・例示系
+
+> [!danger] Danger
+> 重大な警告・エラー (`error` も同義)。
+
+> [!bug] Bug
+> バグ報告。
+
+> [!example] Example
+> 例示・サンプル。
+
+---
+
+## Obsidian Callout: 引用と構文バリエーション
+
+> [!quote] Quote
+> 引用 (`cite` も同義)。
+
+> [!note]
+> タイトル省略時はデフォルトの "Note" が使われる。
+
+> [!warning]+ 折りたたみ構文 `[!type]+` / `[!type]-` も受理
+> `data-callout-fold` 属性で出力 (静的表示)。
+
+---
+
+## Obsidian Callout: 本文も Markdown 対応
+
+> [!tip] **強調**された*タイトル*と `code` も使える
+> 本文も Markdown としてレンダリングされる:
+> - 箇条書き、**強調**、`inline code`
+> - 数式 $E = mc^2$ もそのまま使える
+> - リンクや引用、テーブルも利用可能
 
