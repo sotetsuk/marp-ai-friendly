@@ -21,6 +21,7 @@ $(OUTPUT_DIR):
 .PHONY: pdf
 pdf: $(OUTPUT_DIR)
 	$(MARP_CLI) $(INPUT_FILE) \
+		--config-file marp.config.mjs \
 		--theme-set $(THEME_DIR)/ai_friendly.css \
 		--pdf \
 		--output $(PDF_OUTPUT) \
@@ -30,6 +31,7 @@ pdf: $(OUTPUT_DIR)
 .PHONY: html
 html: $(OUTPUT_DIR)
 	$(MARP_CLI) $(INPUT_FILE) \
+		--config-file marp.config.mjs \
 		--theme-set $(THEME_DIR)/ai_friendly.css \
 		--html \
 		--output $(HTML_OUTPUT) \
@@ -39,6 +41,7 @@ html: $(OUTPUT_DIR)
 .PHONY: png
 png: $(OUTPUT_DIR)
 	$(MARP_CLI) $(INPUT_FILE) \
+		--config-file marp.config.mjs \
 		--theme-set $(THEME_DIR)/ai_friendly.css \
 		--images png \
 		--image-scale 2 \
@@ -49,6 +52,7 @@ png: $(OUTPUT_DIR)
 .PHONY: preview
 preview:
 	$(MARP_CLI) $(INPUT_FILE) \
+		--config-file marp.config.mjs \
 		--theme-set $(THEME_DIR)/ai_friendly.css \
 		--preview \
 		--allow-local-files

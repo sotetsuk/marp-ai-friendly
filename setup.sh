@@ -18,14 +18,18 @@ mkdir -p themes
 echo "Downloading theme: ${THEME} (ref: ${REF})"
 curl -sL -o "themes/${THEME}.css" "${BASE_URL}/themes/ai_friendly.css"
 
-# --- 2. Create .marprc.yml ---
+# --- 2. Download Marp config (Obsidian callout plugin) ---
+curl -sL -o "marp.config.mjs" "${BASE_URL}/marp.config.mjs"
+echo "Downloaded marp.config.mjs"
+
+# --- 3. Create .marprc.yml ---
 cat > .marprc.yml << 'MARPRC'
 themeSet: [themes/]
 allowLocalFiles: true
 MARPRC
 echo "Created .marprc.yml"
 
-# --- 3. Update .vscode/settings.json ---
+# --- 4. Update .vscode/settings.json ---
 URL="${BASE_URL}/themes/ai_friendly.css"
 mkdir -p .vscode
 if command -v python3 >/dev/null 2>&1; then

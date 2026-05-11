@@ -28,6 +28,38 @@ Run the Release workflow from GitHub Actions (or `gh workflow run release.yml -f
 
 With Claude Code, you can also use the `/release` slash command.
 
+### Obsidian Callouts
+
+このテーマは [Obsidian Callout](https://help.obsidian.md/callouts) 構文を完全に再現する追加文法をサポートします (動的な折りたたみは静的描画のみ)。`setup.sh` が `marp.config.mjs` を配置し、Marp CLI/VSCode 拡張の双方で利用できます。
+
+```markdown
+> [!NOTE] タイトル
+> 本文。**Markdown** や `code`、$E = mc^2$ も利用可能。
+```
+
+サポートするタイプ (エイリアスを含む):
+
+| Type | Aliases |
+|---|---|
+| `note` | — |
+| `abstract` | `summary`, `tldr` |
+| `info` | — |
+| `todo` | — |
+| `tip` | `hint`, `important` |
+| `success` | `check`, `done` |
+| `question` | `help`, `faq` |
+| `warning` | `caution`, `attention` |
+| `failure` | `fail`, `missing` |
+| `danger` | `error` |
+| `bug` | — |
+| `example` | — |
+| `quote` | `cite` |
+
+折りたたみ構文 `[!TYPE]+` / `[!TYPE]-` は受理されますが、本テーマでは静的に表示します (アニメーションなし)。未知のタイプは通常の blockquote として表示されます。
+
+> [!NOTE]
+> VSCode の Marp 拡張で Callout を有効化するには、Workspace Trust を許可してください (`marp.config.mjs` を読み込むため)。
+
 ### GitHub Codespace
 
 You can also clone this repo and open with GitHub Codespace:
